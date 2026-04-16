@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <title>IQOS CORPORATE GAME</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: "IQOS-Regular";
+            src: url("butoane/IQOS-regular.otf") format("opentype");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "IQOS-Bold";
+            src: url("butoane/IQOS-Bold.otf") format("opentype");
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            font-family: 'IQOS-Bold';
+            background-image: url("butoane/fundal.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        @supports (-webkit-touch-callout: none) {
+            body {
+                min-height: -webkit-fill-available;
+            }
+        }
+
+        .lang-switcher {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            display: flex;
+            gap: 15px;
+            z-index: 1000;
+            transition: opacity 0.3s ease;
+        }
+
+        .lang-switcher.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .lang-btn {
+            width: 40px;
+            height: auto;
+            cursor: pointer;
+            filter: brightness(0.8);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            transform: rotate(15deg) scale(1.2);
+            filter: brightness(1);
+        }
+
+        .lang-btn.active {
+            filter: brightness(1);
+            transform: scale(1.1);
+        }
+
+        .screen {
+            display: none;
+            opacity: 0;
+            width: 100vw;
+            height: 100vh;
+            height: -webkit-fill-available;
+            position: absolute;
+            top: 0;
+            left: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            transform: translateX(0);
+        }
+
+        .screen.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .screen.fade-out {
+            opacity: 0;
+        }
+
+        .screen.slide-left {
+            transform: translateX(-100%);
+        }
+
+        .screen.slide-right {
+            transform: translateX(100%);
+        }
+
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            max-width: 90%;
+        }
+
+        .slide-text {
+            font-family: "IQOS-Bold";
+            color: #ffffff;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 24px;
+            line-height: 1.4;
+            max-width: 800px;
+        }
+
+        .slide-question {
+            font-family: "IQOS-Bold";
+            color: #ffffff;
+            font-size: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 1.4;
+            max-width: 90%;
+            width: 100%;
+            max-width: 900px;
+            padding: 0 24px;
+            margin: 0 auto 32px;
+        }
+
+        .slide-question.short {
+            font-size: 24px;
+        }
+
+        .slide-question.medium {
+            font-size: 24px;
+        }
+
+        .slide-question.long {
+            font-size: 24px;
+        }
+
+        .question-screen .slide-question {
+            position: static;
+            top: auto;
+            left: auto;
+            transform: none;
+        }
+
+        .final-title {
+            font-family: "IQOS-Bold";
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .final-subtitle {
+            font-family: "IQOS-Bold";
+            color: #ffffff;
+            font-size: 22px;
+            line-height: 1.5;
+            max-width: 700px;
+            margin-bottom: 35px;
+        }
+
+        .curious-fixed {
+            width: 350px;
+            max-width: 85vw;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.4s ease;
+        }
+
+        .curious-fixed:hover {
+            transform: scale(1.08) rotate(2deg);
+        }
+
+        .denial-image {
+            width: 450px;
+            max-width: 85vw;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .denial-image:hover {
+            transform: scale(1.05);
+        }
+
+        .large-btn {
+            width: 380px;
+            max-width: 85vw;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .large-btn:hover {
+            transform: scale(1.07);
+            filter: brightness(1.1);
+        }
+
+        .large-btn:active {
+            transform: scale(0.98);
+        }
+
+        .side-by-side-buttons {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .options-layout {
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            justify-content: space-evenly;
+            align-content: center;
+            row-gap: 15px;
+            column-gap: 15px;
+        }
+
+        .swipe-hint {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            font-family: "IQOS-Regular", Arial, sans-serif;
+            text-align: center;
+            animation: fadeInOut 3s ease-in-out infinite;
+        }
+
+        .auto-reset-hint {
+            font-family: "IQOS-Bold";
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 16px;
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            text-align: center;
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .option-btn {
+            width: min(240px, 22vw);
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease, filter 0.2s ease;
+        }
+
+        .option-btn:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        .option-btn:active {
+            transform: scale(0.95);
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.6;
+            }
+        }
+
+        .loading {
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        @media (max-width: 1024px) {
+            .slide-text {
+                font-size: 24px;
+            }
+            .slide-question {
+                font-size: 22px;
+                margin-bottom: 28px;
+            }
+            .denial-image {
+                width: 380px;
+            }
+            .curious-fixed {
+                width: 300px;
+            }
+            .option-btn {
+                width: min(220px, 26vw);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .slide-text {
+                font-size: 20px;
+            }
+            .slide-question {
+                font-size: 19px;
+                margin-bottom: 24px;
+            }
+            .final-title {
+                font-size: 28px;
+            }
+            .final-subtitle {
+                font-size: 18px;
+            }
+            .options-grid {
+                gap: 16px;
+                max-width: 620px;
+            }
+            .denial-image {
+                width: 300px;
+            }
+            .curious-fixed {
+                width: 260px;
+            }
+            .option-btn {
+                width: min(190px, 34vw);
+            }
+            .lang-switcher {
+                top: 20px;
+                right: 20px;
+            }
+            .lang-btn {
+                width: 35px;
+            }
+            .auto-reset-hint {
+                font-size: 14px;
+                bottom: 20px;
+            }
+            .swipe-hint {
+                font-size: 12px;
+                bottom: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .slide-text {
+                font-size: 18px;
+            }
+            .slide-question {
+                font-size: 17px;
+                margin-bottom: 20px;
+            }
+            .final-title {
+                font-size: 24px;
+            }
+            .final-subtitle {
+                font-size: 16px;
+            }
+            .options-grid {
+                gap: 14px;
+            }
+            .denial-image {
+                width: 260px;
+            }
+            .curious-fixed {
+                width: 220px;
+            }
+            .option-btn {
+                width: min(160px, 38vw);
+            }
+            .side-by-side-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .auto-reset-hint {
+                font-size: 12px;
+                bottom: 15px;
+            }
+        }
+
+        @media (orientation: landscape) and (max-height: 800px) {
+            .options-grid {
+                gap: 12px;
+            }
+            .slide-question {
+                margin-bottom: 18px;
+                font-size: 18px;
+            }
+            .option-btn {
+                width: min(22vh, 22vw, 170px);
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 1024px) {
+            .slide-question {
+                margin-bottom: 20px;
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            #slide-2-ro .side-by-side-buttons,
+            #slide-2-ru .side-by-side-buttons {
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: min(3vw, 16px);
+                flex-wrap: nowrap;
+                width: 100%;
+                max-width: 900px;
+                margin: 0 auto;
+            }
+            #slide-2-ro .large-btn,
+            #slide-2-ru .large-btn {
+                width: min(240px, 32vw);
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #slide-2-ro .side-by-side-buttons,
+            #slide-2-ru .side-by-side-buttons {
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: min(4vw, 12px);
+            }
+            #slide-2-ro .large-btn,
+            #slide-2-ru .large-btn {
+                width: min(190px, 40vw);
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            #slide-9-ro .large-btn,
+            #slide-9-ru .large-btn {
+                width: 300px;
+                max-width: 85vw;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #slide-9-ro .large-btn,
+            #slide-9-ru .large-btn {
+                width: 260px;
+                max-width: 85vw;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #slide-9-ro .large-btn,
+            #slide-9-ru .large-btn {
+                width: 220px;
+                max-width: 85vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="lang-switcher" id="langSwitcher">
+        <img src="butoane/ro.png" alt="RO" class="lang-btn" id="btnRo">
+        <img src="butoane/ru.png" alt="RU" class="lang-btn" id="btnRu">
+    </div>
+
+    <section id="slide-1" class="screen active">
+        <div class="center-content">
+            <img src="butoane/1.png" alt="Curious?" class="curious-fixed" id="curiousTrigger">
+            <div class="swipe-hint" id="swipeHint">← Листайте для навигации →</div>
+        </div>
+    </section>
+
+    <section id="slide-2-ro" class="screen">
+        <div class="center-content">
+            <p class="slide-text">Sunteți fumător major (adult)?</p>
+            <div class="side-by-side-buttons">
+                <img src="butoane/1ro.png" alt="Da" class="large-btn btn-confirm-age">
+                <img src="butoane/2ro.png" alt="Nu" class="large-btn btn-denial">
+            </div>
+        </div>
+    </section>
+
+    <section id="slide-2-ru" class="screen">
+        <div class="center-content">
+            <p class="slide-text">Вы являетесь совершеннолетним курильщиком?</p>
+            <div class="side-by-side-buttons">
+                <img src="butoane/2.png" alt="Да" class="large-btn btn-confirm-age">
+                <img src="butoane/3.png" alt="Нет" class="large-btn btn-denial">
+            </div>
+        </div>
+    </section>
+
+    <section id="slide-3" class="screen">
+        <div class="center-content">
+            <img src="butoane/4.png" alt="Access Denied" class="denial-image" id="denialImage">
+        </div>
+    </section>
+
+    <div id="questionsContainer">
+        <section id="q1-ro" class="screen question-screen">
+            <div class="options-layout">
+                <h2 class="slide-question short">Pauza ta este...</h2>
+                <div class="options-grid">
+                    <img src="butoane/3RO.png" class="option-btn" alt="">
+                    <img src="butoane/4RO.png" class="option-btn" alt="">
+                    <img src="butoane/5RO.png" class="option-btn" alt="">
+                    <img src="butoane/6RO.png" class="option-btn" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="q1-ru" class="screen question-screen">
+            <div class="options-layout">
+                <h2 class="slide-question short">Твоя пауза это...</h2>
+                <div class="options-grid">
+                    <img src="butoane/5.png" class="option-btn" alt="">
+                    <img src="butoane/6.png" class="option-btn" alt="">
+                    <img src="butoane/7.png" class="option-btn" alt="">
+                    <img src="butoane/8.png" class="option-btn" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="q2-ro" class="screen question-screen">
+            <div class="options-layout">
+                <h2 class="slide-question medium">Finalizați lista pentru a fi perfectă: IQOS, seară, apus de soare...</h2>
+                <div class="options-grid">
+                    <img src="butoane/7ro.png" class="option-btn" alt="">
+                    <img src="butoane/8ro.png" class="option-btn" alt="">
+                    <img src="butoane/9ro.png" class="option-btn" alt="">
+                    <img src="butoane/10ro.png" class="option-btn" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="q2-ru" class="screen question-screen">
+            <div class="options-layout">
+                <h2 class="slide-question medium">Заверши, чтобы было идеально: IQOS, вечер, закат ...</h2>
+                <div class="options-grid">
+                    <img src="butoane/9.png" class="option-btn" alt="">
+                    <img src="butoane/10.png" class="option-btn" alt="">
+                    <img src="butoane/11.png" class="option-btn" alt="">
+                    <img src="butoane/12.png" class="option-btn" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="q3-ro" class="screen question-screen">
+            <div class="options-layout">
+                <h2 class="slide-question medium">Combinația mea preferată este IQOS și ...</h2>
+                <div class="options-grid">
+                    <img src="butoane/11ro.png" class="option-btn" alt="">
+                    <img src="butoane/12ro.png" class="option-btn" alt="">
+                    <img src="butoane/13ro.png" class="option-btn" alt="">
+                    <img src="butoane/14ro.png" class="option-btn" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="q3-ru" class="screen question-screen">
+            <div class="options-layout">
+                <h2 class="slide-question medium">Моё любимое сочетание IQOS и …</h2>
+                <div class="options-grid">
+                    <img src="butoane/13.png" class="option-btn" alt="">
+                    <img src="butoane/14.png" class="option-btn" alt="">
+                    <img src="butoane/15.png" class="option-btn" alt="">
+                    <img src="butoane/16.png" class="option-btn" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="q4-ro" class="screen question-screen">
+            <div class="options-layout">
+                <h2 class="slide-question medium">Must Have-ul tău, atunci când călătorești:</h2>
+                <div class="options-grid">
+                    <img src="butoane/15ro.png" class="option-btn" alt="">
+                    <img src="butoane/16ro.png" class="option-btn" alt="">
+                    <img src="butoane/17ro.png" class="option-btn" alt="">
+                    <img src="butoane/18ro.png" class="option-btn" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="q4-ru" class="screen question-screen">
+            <div class="options-layout">
+                <h2 class="slide-question medium">Какой твой маст хэв в путешествии:</h2>
+                <div class="options-grid">
+                    <img src="butoane/17.png" class="option-btn" alt="">
+                    <img src="butoane/18.png" class="option-btn" alt="">
+                    <img src="butoane/19.png" class="option-btn" alt="">
+                    <img src="butoane/20.png" class="option-btn" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="q5-ro" class="screen question-screen">
+            <div class="options-layout">
+                <h2 class="slide-question short">Setul tău obligatoriu pentru seară:</h2>
+                <div class="options-grid">
+                    <img src="butoane/19ro.png" class="option-btn" alt="">
+                    <img src="butoane/20ro.png" class="option-btn" alt="">
+                    <img src="butoane/21ro.png" class="option-btn" alt="">
+                    <img src="butoane/22ro.png" class="option-btn" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="q5-ru" class="screen question-screen">
+            <div class="options-layout">
+                <h2 class="slide-question short">Твой обязательный набор на вечер:</h2>
+                <div class="options-grid">
+                    <img src="butoane/21.png" class="option-btn" alt="">
+                    <img src="butoane/22.png" class="option-btn" alt="">
+                    <img src="butoane/23.png" class="option-btn" alt="">
+                    <img src="butoane/24.png" class="option-btn" alt="">
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <section id="slide-9-ro" class="screen">
+        <div class="center-content">
+            <h2 class="final-title">Ești grozav/ă!</h2>
+            <p class="final-subtitle">Completează-ți ținuta și ia un sticker din bol.<br>O seară plăcută!</p>
+            <img src="butoane/playagainRO.png" alt="Joacă Din Nou" class="large-btn" id="replayRo">
+            <p class="auto-reset-hint">Resetare automată în <span id="countdown-ro">8</span> secunde...</p>
+        </div>
+    </section>
+
+    <section id="slide-9-ru" class="screen">
+        <div class="center-content">
+            <h2 class="final-title">Ты просто вайб!</h2>
+            <p class="final-subtitle">Заверши образ - возьми стикер из вазы.<br>Хорошего вечера!</p>
+            <img src="butoane/playagain.png" alt="Играть Снова" class="large-btn" id="replayRu">
+            <p class="auto-reset-hint">Автосброс через <span id="countdown-ru">8</span> секунд...</p>
+        </div>
+    </section>
+
+    <script>
+        const state = {
+            currentLang: "ru",
+            questionOrder: [1, 2, 3, 4, 5],
+            currentQuestionIndex: 0,
+            inactivityTimer: null,
+            autoResetTimer: null,
+            countdownInterval: null,
+            touchStartX: 0,
+            touchEndX: 0
+        };
+
+        const elements = {
+            langSwitcher: document.getElementById("langSwitcher"),
+            btnRo: document.getElementById("btnRo"),
+            btnRu: document.getElementById("btnRu"),
+            curiousTrigger: document.getElementById("curiousTrigger"),
+            replayRo: document.getElementById("replayRo"),
+            replayRu: document.getElementById("replayRu"),
+            swipeHint: document.getElementById("swipeHint"),
+            denialImage: document.getElementById("denialImage")
+        };
+
+        const swipeHintText = {
+            ro: "← Glisați pentru a naviga →",
+            ru: "← Листайте для навигации →"
+        };
+
+        function shuffleArray(arr) {
+            const a = [...arr];
+            for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
+        }
+
+        function showSlide(id) {
+            const current = document.querySelector(".screen.active");
+            const target = document.getElementById(id);
+            if (!target) return;
+            if (current) {
+                current.classList.add("fade-out");
+                setTimeout(() => {
+                    current.classList.remove("active", "fade-out");
+                    target.classList.add("active");
+                }, 300);
+            } else {
+                target.classList.add("active");
+            }
+        }
+
+        function resetInactivityTimer() {
+            const active = document.querySelector(".screen.active");
+            if (
+                active &&
+                (active.id === "slide-1" ||
+                    active.id === "slide-9-ro" ||
+                    active.id === "slide-9-ru")
+            ) {
+                clearTimeout(state.inactivityTimer);
+                return;
+            }
+            clearTimeout(state.inactivityTimer);
+            state.inactivityTimer = setTimeout(() => location.reload(), 30000);
+        }
+
+        function startAutoReset(seconds = 8) {
+            const el = document.getElementById(`countdown-${state.currentLang}`);
+            let t = seconds;
+            clearTimeout(state.autoResetTimer);
+            clearInterval(state.countdownInterval);
+            if (el) el.textContent = t;
+            state.countdownInterval = setInterval(() => {
+                t--;
+                if (el) el.textContent = t;
+                if (t <= 0) clearInterval(state.countdownInterval);
+            }, 1000);
+            state.autoResetTimer = setTimeout(() => location.reload(), seconds * 1000);
+        }
+
+        function cancelAutoReset() {
+            clearTimeout(state.autoResetTimer);
+            clearInterval(state.countdownInterval);
+        }
+
+        function updateLanguageButtons() {
+            elements.btnRo.classList.toggle("active", state.currentLang === "ro");
+            elements.btnRu.classList.toggle("active", state.currentLang === "ru");
+            if (elements.swipeHint) {
+                elements.swipeHint.textContent = swipeHintText[state.currentLang];
+            }
+        }
+
+        function startQuiz() {
+            state.questionOrder = shuffleArray([1, 2, 3, 4, 5]);
+            state.currentQuestionIndex = 0;
+            showSlide(`q${state.questionOrder[0]}-${state.currentLang}`);
+        }
+
+        function goToNextQuestion() {
+            state.currentQuestionIndex++;
+            if (state.currentQuestionIndex < state.questionOrder.length) {
+                const n = state.questionOrder[state.currentQuestionIndex];
+                showSlide(`q${n}-${state.currentLang}`);
+            } else {
+                showSlide(`slide-9-${state.currentLang}`);
+                startAutoReset(8);
+            }
+        }
+
+        function handleDenial() {
+            if (elements.denialImage) {
+                elements.denialImage.src =
+                    state.currentLang === "ro"
+                        ? "butoane/iconiteRo.png"
+                        : "butoane/4.png";
+            }
+            showSlide("slide-3");
+            setTimeout(() => location.reload(), 20000);
+        }
+
+        function handleTouchStart(e) {
+            state.touchStartX = e.changedTouches[0].screenX;
+        }
+
+        function handleTouchEnd(e) {
+            state.touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }
+
+        function handleSwipe() {
+            const current = document.querySelector(".screen.active");
+            if (!current || current.id !== "slide-1") return;
+            const diff = state.touchStartX - state.touchEndX;
+            if (Math.abs(diff) > 50) {
+                elements.langSwitcher.classList.add("hidden");
+                showSlide(state.currentLang === "ro" ? "slide-2-ro" : "slide-2-ru");
+            }
+        }
+
+        elements.btnRo.addEventListener("click", () => {
+            state.currentLang = "ro";
+            updateLanguageButtons();
+        });
+
+        elements.btnRu.addEventListener("click", () => {
+            state.currentLang = "ru";
+            updateLanguageButtons();
+        });
+
+        elements.curiousTrigger.addEventListener("click", () => {
+            elements.langSwitcher.classList.add("hidden");
+            showSlide(state.currentLang === "ro" ? "slide-2-ro" : "slide-2-ru");
+        });
+
+        document.querySelectorAll(".btn-confirm-age").forEach(btn => {
+            btn.addEventListener("click", startQuiz);
+        });
+
+        document.querySelectorAll(".btn-denial").forEach(btn => {
+            btn.addEventListener("click", handleDenial);
+        });
+
+        document.querySelectorAll(".option-btn").forEach(btn => {
+            btn.addEventListener("click", goToNextQuestion);
+        });
+
+        elements.replayRo.addEventListener("click", () => location.reload());
+        elements.replayRu.addEventListener("click", () => location.reload());
+
+        document.addEventListener("touchstart", handleTouchStart, { passive: true });
+        document.addEventListener("touchend", handleTouchEnd, { passive: true });
+
+        ["click", "mousemove", "keydown", "touchstart"].forEach(event => {
+            document.addEventListener(event, resetInactivityTimer);
+        });
+
+        document.addEventListener("click", () => {
+            const finalScreen = document.querySelector(
+                "#slide-9-ro.active, #slide-9-ru.active"
+            );
+            if (finalScreen) cancelAutoReset();
+        });
+
+        updateLanguageButtons();
+        resetInactivityTimer();
+    </script>
+</body>
+</html>
