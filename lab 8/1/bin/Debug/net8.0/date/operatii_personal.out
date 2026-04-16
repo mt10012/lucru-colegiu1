@@ -1,0 +1,11 @@
+3/15/2026 2:18:18 PM | 1242441234561 | creare | - | activ=True
+3/15/2026 2:18:42 PM | 1242441234561 | afisare detalii | - | activ=True
+3/15/2026 2:18:53 PM | 1242441234561 | calcul salariu | 33877.20 | activ=True
+3/15/2026 2:19:08 PM | 1242441234561 | acordare bonus | 1222 | activ=True
+3/15/2026 2:19:20 PM | 1242441234561 | calcul salariu | 35465.80 | activ=True
+3/15/2026 2:19:50 PM | 1242441234561 | activare | - | activ=True
+3/15/2026 2:20:02 PM | 1242441234561 | dezactivare | - | activ=False
+3/15/2026 2:20:10 PM | 1242441234561 | activare | - | activ=True
+3/15/2026 2:20:56 PM | 1242441234561 | calcul scor performanta | 24 | activ=True
+3/15/2026 2:21:05 PM | 1242441234561 | generare raport evaluare | - | activ=True
+3/15/2026 2:21:15 PM | 1242441234561 | generare raport financiar | - | activ=True

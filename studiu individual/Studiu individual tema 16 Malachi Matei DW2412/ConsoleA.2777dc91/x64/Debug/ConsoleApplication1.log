@@ -1,0 +1,5 @@
+﻿  main.cpp
+  ong.cpp
+C:\Users\matei\OneDrive\Desktop\studiu individual\Studiu individual tema 16 Malachi Matei DW2412\ong.cpp(616,21): warning C4566: character represented by universal-character-name '\u0102' cannot be represented in the current code page (1252)
+  Generating Code...
+  ConsoleApplication1.vcxproj -> C:\Users\matei\OneDrive\Desktop\studiu individual\Studiu individual tema 16 Malachi Matei DW2412\x64\Debug\ConsoleApplication1.exe
