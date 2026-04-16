@@ -1,0 +1,14 @@
+C:\Users\matei\OneDrive\Desktop\lab 7\Varianta 1 most simple\bin\Debug\net8.0\Varianta 1 most simple.exe
+C:\Users\matei\OneDrive\Desktop\lab 7\Varianta 1 most simple\bin\Debug\net8.0\Varianta 1 most simple.deps.json
+C:\Users\matei\OneDrive\Desktop\lab 7\Varianta 1 most simple\bin\Debug\net8.0\Varianta 1 most simple.runtimeconfig.json
+C:\Users\matei\OneDrive\Desktop\lab 7\Varianta 1 most simple\bin\Debug\net8.0\Varianta 1 most simple.dll
+C:\Users\matei\OneDrive\Desktop\lab 7\Varianta 1 most simple\bin\Debug\net8.0\Varianta 1 most simple.pdb
+C:\Users\matei\OneDrive\Desktop\lab 7\Varianta 1 most simple\obj\Debug\net8.0\Varianta 1 most simple.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matei\OneDrive\Desktop\lab 7\Varianta 1 most simple\obj\Debug\net8.0\Varianta 1 most simple.AssemblyInfoInputs.cache
+C:\Users\matei\OneDrive\Desktop\lab 7\Varianta 1 most simple\obj\Debug\net8.0\Varianta 1 most simple.AssemblyInfo.cs
+C:\Users\matei\OneDrive\Desktop\lab 7\Varianta 1 most simple\obj\Debug\net8.0\Varianta 1 most simple.csproj.CoreCompileInputs.cache
+C:\Users\matei\OneDrive\Desktop\lab 7\Varianta 1 most simple\obj\Debug\net8.0\Varianta 1 most simple.dll
+C:\Users\matei\OneDrive\Desktop\lab 7\Varianta 1 most simple\obj\Debug\net8.0\refint\Varianta 1 most simple.dll
+C:\Users\matei\OneDrive\Desktop\lab 7\Varianta 1 most simple\obj\Debug\net8.0\Varianta 1 most simple.pdb
+C:\Users\matei\OneDrive\Desktop\lab 7\Varianta 1 most simple\obj\Debug\net8.0\Varianta 1 most simple.genruntimeconfig.cache
+C:\Users\matei\OneDrive\Desktop\lab 7\Varianta 1 most simple\obj\Debug\net8.0\ref\Varianta 1 most simple.dll

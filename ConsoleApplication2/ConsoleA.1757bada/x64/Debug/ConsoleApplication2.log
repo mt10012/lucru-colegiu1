@@ -1,0 +1,5 @@
+﻿  ConsoleApplication2.cpp
+C:\Users\matei\DW2412\ConsoleApplication2\ConsoleApplication2.cpp(19,5): error C2065: 'intprod': undeclared identifier
+C:\Users\matei\DW2412\ConsoleApplication2\ConsoleApplication2.cpp(19,22): error C2065: 'c': undeclared identifier
+C:\Users\matei\DW2412\ConsoleApplication2\ConsoleApplication2.cpp(19,25): error C2065: 'd': undeclared identifier
+C:\Users\matei\DW2412\ConsoleApplication2\ConsoleApplication2.cpp(21,44): error C2065: 'produs': undeclared identifier

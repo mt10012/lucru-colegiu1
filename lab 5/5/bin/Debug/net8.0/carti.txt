@@ -1,0 +1,15 @@
+Ion;Liviu Rebreanu;1920;45;Roman
+Baltagul;Mihail Sadoveanu;1930;55;Epic
+Morometii;Marin Preda;1955;60;Realism
+Enigma Otiliei;George Calinescu;1938;50;Roman
+Amintiri din copilarie;Ion Creanga;1892;35;Clasic
+Maitreyi;Mircea Eliade;1933;48;Roman
+Ultima noapte de dragoste;Camil Petrescu;1930;52;Roman
+Luceafarul;Mihai Eminescu;1883;30;Poezie
+Padurea spanzuratilor;Liviu Rebreanu;1922;47;Roman
+Fratii Jderi;Mihail Sadoveanu;1935;58;Istoric
+Ciocoii vechi si noi;Nicolae Filimon;1863;40;Clasic
+Romanul adolescentului miop;Mircea Eliade;1928;46;Roman
+Cel mai iubit dintre pamanteni;Marin Preda;1980;65;Roman
+Hanu Ancutei;Mihail Sadoveanu;1928;44;Povestiri
+La Medeleni;Ionel Teodoreanu;1925;49;Roman
