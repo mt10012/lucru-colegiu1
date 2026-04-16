@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Axiom IT — Blog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;0,800;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/axiom-it.css"/>
+</head>
+<body class="pagina">
+
+<nav class="bara-navigare">
+  <div class="container">
+    <a href="index.html" class="logo-nav"><img src="/img/logo-axiom.png" alt="Axiom IT"/></a>
+    <ul class="linkuri-nav">
+      <li><a href="index.html">Acasă</a></li>
+      <li><a href="services.html">Servicii</a></li>
+      <li><a href="about.html">Despre noi</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="blog.html" class="activ">Blog</a></li>
+    </ul>
+    <a href="#contact" class="buton buton-principal buton-contact-nav">Contact</a>
+  </div>
+</nav>
+
+
+<section class="sectiunea-blog-hero">
+  <div class="container">
+    <p class="pesmet"><a href="index.html">Acasă</a> / <span>Blog</span></p>
+    <span class="eticheta-sectiune eticheta-albastra">Blog</span>
+    <h1>Insights &amp; Tendințe<br><span class="accent">în tehnologie</span></h1>
+    <p style="font-size:18px;color:var(--gri);max-width:640px;margin-top:12px">Articole tehnice, studii de caz și ghiduri practice scrise de inginerii Axiom IT. Cunoaștere fără filtre — direct din producție.</p>
+
+    <div class="bara-cautare-blog">
+      <input type="search" placeholder="Caută articole, tehnologii, tutoriale..."/>
+      <button class="buton-cautare">🔍 Caută</button>
+    </div>
+
+    <div class="filtre-categorii">
+      <button class="pastila-filtru activ">Toate</button>
+      <button class="pastila-filtru cat-ai">AI &amp; ML</button>
+      <button class="pastila-filtru cat-cloud">Cloud</button>
+      <button class="pastila-filtru cat-sec">Cybersecurity</button>
+      <button class="pastila-filtru cat-devops">DevOps</button>
+      <button class="pastila-filtru cat-data">Data &amp; BI</button>
+      <button class="pastila-filtru cat-tutorial">Tutoriale</button>
+    </div>
+  </div>
+</section>
+
+<div class="separator"></div>
+
+
+<section style="padding:60px 0">
+  <div class="container">
+    <div class="grila-blog">
+
+      <div class="continut-blog">
+
+        <article class="card-articol-featured apare">
+          <div class="imaginea-featured" style="background:linear-gradient(135deg,#0a1f55,#071235)">
+            <div class="icon-articol">⚙️</div>
+            <div class="gradient-jos"></div>
+            <div class="meta-featured">
+              <span class="badge-featured principal">★ Featured</span>
+              <span class="badge-featured" style="background:rgba(29,78,216,.2);border:1px solid rgba(59,130,246,.5);color:var(--albastru-pal)">AI &amp; ML</span>
+            </div>
+          </div>
+          <div class="continut-featured">
+            <h2>Cum am redus costurile AI cu 78% folosind RAG în producție</h2>
+            <p>Ghid complet: arhitectura RAG (Retrieval-Augmented Generation) pe care am implementat-o pentru un client FinTech, reducând costurile de inferință cu 78% fără degradarea calității răspunsurilor.</p>
+            <div class="meta-articol">
+              <div class="avatar-autor-mic" style="background:linear-gradient(135deg,#1d4ed8,#4338ca)">👤</div>
+              <div class="info-meta">
+                <strong>Maria C.</strong>
+                <span class="punct-separator">·</span>
+                CTO
+                <span class="punct-separator">·</span>
+                12 Mar 2024
+                <span class="punct-separator">·</span>
+                12 min citire
+                <span class="punct-separator">·</span>
+                4.2k vizualizări
+              </div>
+            </div>
+            <div class="butoane-hero buton-citeste">
+              <a href="#" class="buton buton-principal" style="padding:11px 26px;font-size:14px">Citește articolul →</a>
+              <a href="#" class="buton buton-contur" style="padding:11px 26px;font-size:14px">♡ Salvează</a>
+            </div>
+          </div>
+        </article>
+
+
+        <p style="font-size:14px;color:var(--gri-mai-inchis);margin-bottom:20px;display:flex;justify-content:space-between;align-items:center">
+          <span>Articole recente <strong style="color:var(--alb)">— 24 articole</strong></span>
+          <span style="color:var(--gri)">Sortare: Cele mai noi ▾</span>
+        </p>
+
+        <div class="grila-articole">
+
+          <article class="card-articol apare intarziere-1">
+            <div class="imaginea-card" style="background:linear-gradient(135deg,#0a1f55,#071235)">
+              <div class="icon-card">🤖</div>
+              <div class="gradient-card"></div>
+              <span class="badge-categorie bc-ai">AI &amp; ML</span>
+            </div>
+            <div class="continut-card">
+              <h3>LLM Agents în 2024: ce funcționează cu adevărat</h3>
+              <p>Testăm 5 framework-uri de agenți AI în producție și îți spunem care merită investiția.</p>
+              <div class="meta-card">
+                <div class="avatar-autor-xs" style="background:linear-gradient(135deg,#be185d,#9d174d)">👤</div>
+                <div class="meta-card-info"><strong>Radu T.</strong> · 28 Feb · 10 min</div>
+                <span class="like-count">♡ 94</span>
+              </div>
+              <div class="etichete-articol">
+                <span class="eticheta-articol">LLM</span>
+                <span class="eticheta-articol">LangChain</span>
+                <span class="eticheta-articol">CrewAI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-articol apare intarziere-2">
+            <div class="imaginea-card" style="background:linear-gradient(135deg,#061825,#040f20)">
+              <div class="icon-card">☁️</div>
+              <div class="gradient-card"></div>
+              <span class="badge-categorie bc-cloud">Cloud</span>
+            </div>
+            <div class="continut-card">
+              <h3>AWS vs Azure în 2024: comparație reală, cost inclus</h3>
+              <p>Benchmark-uri reale pe workload-uri identice — care provider câștigă în 2024?</p>
+              <div class="meta-card">
+                <div class="avatar-autor-xs" style="background:linear-gradient(135deg,#0891b2,#0e7490)">👤</div>
+                <div class="meta-card-info"><strong>Ioana D.</strong> · 15 Feb · 14 min</div>
+                <span class="like-count">♡ 212</span>
+              </div>
+              <div class="etichete-articol">
+                <span class="eticheta-articol">AWS</span>
+                <span class="eticheta-articol">Azure</span>
+                <span class="eticheta-articol">FinOps</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-articol apare intarziere-3">
+            <div class="imaginea-card" style="background:linear-gradient(135deg,#0c0820,#060414)">
+              <div class="icon-card">🛡️</div>
+              <div class="gradient-card"></div>
+              <span class="badge-categorie bc-sec">Cybersecurity</span>
+            </div>
+            <div class="continut-card">
+              <h3>Zero Trust în practică: implementare pas cu pas</h3>
+              <p>Cum am implementat arhitectura Zero Trust pentru 3000 de utilizatori fără downtime.</p>
+              <div class="meta-card">
+                <div class="avatar-autor-xs" style="background:linear-gradient(135deg,#7c3aed,#5b21b6)">👤</div>
+                <div class="meta-card-info"><strong>Andrei P.</strong> · 5 Feb · 18 min</div>
+                <span class="like-count">♡ 176</span>
+              </div>
+              <div class="etichete-articol">
+                <span class="eticheta-articol">Zero Trust</span>
+                <span class="eticheta-articol">Okta</span>
+                <span class="eticheta-articol">IAM</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-articol apare intarziere-1">
+            <div class="imaginea-card" style="background:linear-gradient(135deg,#052010,#030f08)">
+              <div class="icon-card">⚡</div>
+              <div class="gradient-card"></div>
+              <span class="badge-categorie bc-devops">DevOps</span>
+            </div>
+            <div class="continut-card">
+              <h3>Platform Engineering: construiești sau cumperi?</h3>
+              <p>Analiză cost-beneficiu pentru Internal Developer Platform vs soluții SaaS. Include calculatorul TCO.</p>
+              <div class="meta-card">
+                <div class="avatar-autor-xs" style="background:linear-gradient(135deg,#1d4ed8,#4338ca)">👤</div>
+                <div class="meta-card-info"><strong>Alexandru M.</strong> · 22 Ian · 8 min</div>
+                <span class="like-count">♡ 88</span>
+              </div>
+              <div class="etichete-articol">
+                <span class="eticheta-articol">Platform Eng</span>
+                <span class="eticheta-articol">Backstage</span>
+                <span class="eticheta-articol">IDP</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-articol apare intarziere-2">
+            <div class="imaginea-card" style="background:linear-gradient(135deg,#1c0e00,#0e0700)">
+              <div class="icon-card">📊</div>
+              <div class="gradient-card"></div>
+              <span class="badge-categorie bc-data">Data &amp; BI</span>
+            </div>
+            <div class="continut-card">
+              <h3>Databricks vs Snowflake: care se potrivește businessului tău</h3>
+              <p>Ghid de selecție cu criterii clare: volum date, latență, echipă, buget. Decizie în 5 pași.</p>
+              <div class="meta-card">
+                <div class="avatar-autor-xs" style="background:linear-gradient(135deg,#b45309,#92400e)">👤</div>
+                <div class="meta-card-info"><strong>Elena V.</strong> · 10 Ian · 12 min</div>
+                <span class="like-count">♡ 145</span>
+              </div>
+              <div class="etichete-articol">
+                <span class="eticheta-articol">Databricks</span>
+                <span class="eticheta-articol">Snowflake</span>
+                <span class="eticheta-articol">Lakehouse</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-articol apare intarziere-3">
+            <div class="imaginea-card" style="background:linear-gradient(135deg,#1a0510,#0d020a)">
+              <div class="icon-card">🔧</div>
+              <div class="gradient-card"></div>
+              <span class="badge-categorie bc-tutorial">Tutorial</span>
+            </div>
+            <div class="continut-card">
+              <h3>CI/CD cu GitHub Actions de la zero la producție în 1h</h3>
+              <p>Tutorial complet: repo, secrets, environments, rollback automat, notificări Slack. Cod inclus.</p>
+              <div class="meta-card">
+                <div class="avatar-autor-xs" style="background:linear-gradient(135deg,#1d4ed8,#4338ca)">👤</div>
+                <div class="meta-card-info"><strong>Maria C.</strong> · 3 Ian · 6 min</div>
+                <span class="like-count">♡ 321</span>
+              </div>
+              <div class="etichete-articol">
+                <span class="eticheta-articol">GitHub Actions</span>
+                <span class="eticheta-articol">CI/CD</span>
+                <span class="eticheta-articol">Docker</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-articol apare intarziere-1">
+            <div class="imaginea-card" style="background:linear-gradient(135deg,#0a1f55,#071235)">
+              <div class="icon-card">🔑</div>
+              <div class="gradient-card"></div>
+              <span class="badge-categorie bc-ai">AI &amp; ML</span>
+            </div>
+            <div class="continut-card">
+              <h3>Fine-tuning GPT-4 pentru domenii specifice: ghid complet</h3>
+              <p>Cum am antrenat un model custom pentru clasificarea documentelor juridice cu acuratețe 97%.</p>
+              <div class="meta-card">
+                <div class="avatar-autor-xs" style="background:linear-gradient(135deg,#be185d,#9d174d)">👤</div>
+                <div class="meta-card-info"><strong>Radu T.</strong> · 28 Dec · 15 min</div>
+                <span class="like-count">♡ 267</span>
+              </div>
+              <div class="etichete-articol">
+                <span class="eticheta-articol">GPT-4</span>
+                <span class="eticheta-articol">Fine-tuning</span>
+                <span class="eticheta-articol">OpenAI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-articol apare intarziere-2">
+            <div class="imaginea-card" style="background:linear-gradient(135deg,#061825,#040f20)">
+              <div class="icon-card">🌍</div>
+              <div class="gradient-card"></div>
+              <span class="badge-categorie bc-cloud">Cloud</span>
+            </div>
+            <div class="continut-card">
+              <h3>Terraform best practices 2024: lecții din 50+ proiecte</h3>
+              <p>Tot ce am învățat după 50+ proiecte Terraform: module structure, state management, secrets.</p>
+              <div class="meta-card">
+                <div class="avatar-autor-xs" style="background:linear-gradient(135deg,#0891b2,#0e7490)">👤</div>
+                <div class="meta-card-info"><strong>Ioana D.</strong> · 15 Dec · 11 min</div>
+                <span class="like-count">♡ 198</span>
+              </div>
+              <div class="etichete-articol">
+                <span class="eticheta-articol">Terraform</span>
+                <span class="eticheta-articol">IaC</span>
+                <span class="eticheta-articol">AWS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-articol apare intarziere-3">
+            <div class="imaginea-card" style="background:linear-gradient(135deg,#0c0820,#060414)">
+              <div class="icon-card">🔐</div>
+              <div class="gradient-card"></div>
+              <span class="badge-categorie bc-sec">Cybersecurity</span>
+            </div>
+            <div class="continut-card">
+              <h3>OWASP Top 10 — ghid practic 2024</h3>
+              <p>Cele mai comune vulnerabilități web cu exemple reale și cod de remediere pentru fiecare.</p>
+              <div class="meta-card">
+                <div class="avatar-autor-xs" style="background:linear-gradient(135deg,#7c3aed,#5b21b6)">👤</div>
+                <div class="meta-card-info"><strong>Andrei P.</strong> · 1 Dec · 20 min</div>
+                <span class="like-count">♡ 432</span>
+              </div>
+              <div class="etichete-articol">
+                <span class="eticheta-articol">OWASP</span>
+                <span class="eticheta-articol">Security</span>
+                <span class="eticheta-articol">Web</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <button class="buton-incarca apare">Încarcă mai multe articole ↓</button>
+
+      </div>
+
+
+      <aside class="sidebar-blog">
+
+        <div class="card-sidebar">
+          <h4>🔥 Cele mai citite</h4>
+          <div class="articol-top">
+            <div class="numar-rank" style="color:var(--albastru-deschis)">01</div>
+            <div class="info-top">
+              <span class="badge-categorie bc-devops" style="position:static;display:inline-block;margin-bottom:4px;font-size:10px">DevOps</span>
+              <h5>Zero-downtime Kubernetes deploy</h5>
+              <p class="meta-top">8.1k vizualizări · 9 min citire</p>
+            </div>
+          </div>
+          <div class="articol-top">
+            <div class="numar-rank" style="color:var(--cyan-deschis)">02</div>
+            <div class="info-top">
+              <span class="badge-categorie bc-cloud" style="position:static;display:inline-block;margin-bottom:4px;font-size:10px">Cloud</span>
+              <h5>Terraform best practices 2024</h5>
+              <p class="meta-top">6.4k vizualizări · 11 min citire</p>
+            </div>
+          </div>
+          <div class="articol-top">
+            <div class="numar-rank" style="color:var(--violet)">03</div>
+            <div class="info-top">
+              <span class="badge-categorie bc-sec" style="position:static;display:inline-block;margin-bottom:4px;font-size:10px">Security</span>
+              <h5>OWASP Top 10 — ghid practic 2024</h5>
+              <p class="meta-top">5.7k vizualizări · 15 min citire</p>
+            </div>
+          </div>
+          <div class="articol-top">
+            <div class="numar-rank" style="color:var(--verde-deschis)">04</div>
+            <div class="info-top">
+              <span class="badge-categorie bc-devops" style="position:static;display:inline-block;margin-bottom:4px;font-size:10px">DevOps</span>
+              <h5>GitOps cu ArgoCD — de la zero</h5>
+              <p class="meta-top">4.9k vizualizări · 7 min citire</p>
+            </div>
+          </div>
+          <div class="articol-top">
+            <div class="numar-rank">05</div>
+            <div class="info-top">
+              <span class="badge-categorie bc-cloud" style="position:static;display:inline-block;margin-bottom:4px;font-size:10px">Cloud</span>
+              <h5>FinOps: cum economisești 40% pe AWS</h5>
+              <p class="meta-top">4.1k vizualizări · 6 min citire</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-sidebar">
+          <h4>✍️ Autorii noștri</h4>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="display:flex;align-items:center;gap:12px">
+              <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#1d4ed8,#4338ca);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">👤</div>
+              <div><p style="font-size:13px;font-weight:600;color:var(--alb);margin:0">Maria C.</p><p style="font-size:12px;color:var(--gri);margin:0">CTO · 8 articole</p></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px">
+              <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#be185d,#9d174d);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">👤</div>
+              <div><p style="font-size:13px;font-weight:600;color:var(--alb);margin:0">Radu T.</p><p style="font-size:12px;color:var(--gri);margin:0">Head AI · 6 articole</p></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px">
+              <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#7c3aed,#5b21b6);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">👤</div>
+              <div><p style="font-size:13px;font-weight:600;color:var(--alb);margin:0">Andrei P.</p><p style="font-size:12px;color:var(--gri);margin:0">Head Security · 5 articole</p></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px">
+              <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#0891b2,#0e7490);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">👤</div>
+              <div><p style="font-size:13px;font-weight:600;color:var(--alb);margin:0">Ioana D.</p><p style="font-size:12px;color:var(--gri);margin:0">Head Cloud · 5 articole</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-sidebar">
+          <h4>🏷️ Tag-uri populare</h4>
+          <div style="display:flex;flex-wrap:wrap;gap:7px">
+            <span class="eticheta-articol" style="cursor:pointer;font-size:12px;padding:4px 12px">Kubernetes</span>
+            <span class="eticheta-articol" style="cursor:pointer;font-size:12px;padding:4px 12px">Terraform</span>
+            <span class="eticheta-articol" style="cursor:pointer;font-size:12px;padding:4px 12px">LLM</span>
+            <span class="eticheta-articol" style="cursor:pointer;font-size:12px;padding:4px 12px">AWS</span>
+            <span class="eticheta-articol" style="cursor:pointer;font-size:12px;padding:4px 12px">OWASP</span>
+            <span class="eticheta-articol" style="cursor:pointer;font-size:12px;padding:4px 12px">RAG</span>
+            <span class="eticheta-articol" style="cursor:pointer;font-size:12px;padding:4px 12px">GitOps</span>
+            <span class="eticheta-articol" style="cursor:pointer;font-size:12px;padding:4px 12px">FinOps</span>
+            <span class="eticheta-articol" style="cursor:pointer;font-size:12px;padding:4px 12px">Databricks</span>
+            <span class="eticheta-articol" style="cursor:pointer;font-size:12px;padding:4px 12px">Zero Trust</span>
+            <span class="eticheta-articol" style="cursor:pointer;font-size:12px;padding:4px 12px">Docker</span>
+            <span class="eticheta-articol" style="cursor:pointer;font-size:12px;padding:4px 12px">Snowflake</span>
+            <span class="eticheta-articol" style="cursor:pointer;font-size:12px;padding:4px 12px">ArgoCD</span>
+            <span class="eticheta-articol" style="cursor:pointer;font-size:12px;padding:4px 12px">SRE</span>
+            <span class="eticheta-articol" style="cursor:pointer;font-size:12px;padding:4px 12px">Azure</span>
+          </div>
+        </div>
+
+        <div class="card-sidebar" style="background:linear-gradient(135deg,#0f2060,#0d1840);border-color:rgba(59,130,246,.25)">
+          <h4 style="color:var(--albastru-pal)">📬 Newsletter rapid</h4>
+          <p style="font-size:13px;color:var(--gri-deschis);margin-bottom:14px">Articole noi direct în inbox, 2x / lună. Fără spam.</p>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <input type="email" placeholder="email@tau.ro" style="background:rgba(10,20,50,.8);border:1px solid var(--bordura);border-radius:8px;padding:10px 14px;font-size:13px;color:var(--gri-mai-inchis);outline:none;font-family:'DM Sans',sans-serif;width:100%"/>
+            <button style="padding:10px;border:none;border-radius:8px;background:var(--gradient-albastru);color:#fff;font-size:13px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;width:100%">Abonează-te →</button>
+          </div>
+          <p style="font-size:11px;color:var(--bordura);margin-top:8px;text-align:center">3.200+ abonați · Dezabonare oricând</p>
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<div class="separator"></div>
+
+
+<section class="sectiunea-newsletter">
+  <div class="container">
+    <div class="card-newsletter apare">
+      <span class="eticheta-sectiune eticheta-albastra" style="margin:0 auto 16px">📬 Newsletter</span>
+      <h2>Fii primul care citește</h2>
+      <p>Articole noi, tutoriale și cazuri de studiu livrate direct în inbox. Fără spam, dezabonare oricând.</p>
+      <div class="forma-newsletter">
+        <input type="email" placeholder="Adresa ta de email..."/>
+        <button>Abonează-te →</button>
+      </div>
+      <p class="meta-newsletter">Peste 3.200 abonați · Frecvență: 2x / lună · Dezabonare oricând</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="nori-etichete">
+  <div class="container">
+    <h3>Explorează după subiect</h3>
+    <p>Click pe un tag pentru a filtra articolele</p>
+    <div class="grila-etichete">
+      <a href="#" class="eticheta-nor albastru mare">Kubernetes</a>
+      <a href="#" class="eticheta-nor cyan">Terraform</a>
+      <a href="#" class="eticheta-nor mov">OWASP</a>
+      <a href="#" class="eticheta-nor albastru mare">LangChain</a>
+      <a href="#" class="eticheta-nor verde">GitOps</a>
+      <a href="#" class="eticheta-nor chihlimbar">Databricks</a>
+      <a href="#" class="eticheta-nor albastru">AWS</a>
+      <a href="#" class="eticheta-nor cyan">Azure</a>
+      <a href="#" class="eticheta-nor mov">Zero Trust</a>
+      <a href="#" class="eticheta-nor verde">ArgoCD</a>
+      <a href="#" class="eticheta-nor albastru">FinOps</a>
+      <a href="#" class="eticheta-nor roz">Docker</a>
+      <a href="#" class="eticheta-nor chihlimbar">Snowflake</a>
+      <a href="#" class="eticheta-nor albastru mare">RAG · Vector DB</a>
+      <a href="#" class="eticheta-nor cyan mic">GCP</a>
+      <a href="#" class="eticheta-nor mov">Pentesting</a>
+      <a href="#" class="eticheta-nor verde mic">SRE</a>
+      <a href="#" class="eticheta-nor gri">Prometheus</a>
+      <a href="#" class="eticheta-nor gri">Grafana</a>
+      <a href="#" class="eticheta-nor gri mic">Ansible</a>
+      <a href="#" class="eticheta-nor albastru mic">OpenAI API</a>
+      <a href="#" class="eticheta-nor cyan mic">Istio</a>
+      <a href="#" class="eticheta-nor chihlimbar">dbt · Airflow</a>
+      <a href="#" class="eticheta-nor gri mic">Helm Charts</a>
+      <a href="#" class="eticheta-nor mov mic">Vault</a>
+    </div>
+  </div>
+</section>
+
+<div class="separator"></div>
+
+
+<footer class="subsol" id="contact">
+  <div class="container">
+    <div class="subsol-principal">
+      <div class="subsol-brand">
+        <a href="index.html" class="logo-subsol"><img src="/img/logo-axiom.png" alt="Axiom IT"/></a>
+        <p class="descriere-brand">Partenerul tău de încredere pentru transformarea digitală.</p>
+        <p class="tagline-brand">AI · Cloud · DevOps · Security · Data Platforms</p>
+        <div class="retele-sociale">
+          <button class="buton-social">in</button>
+          <button class="buton-social">tw</button>
+          <button class="buton-social">fb</button>
+          <button class="buton-social">yt</button>
+        </div>
+      </div>
+      <div class="coloana-subsol">
+        <h4>Servicii</h4>
+        <ul>
+          <li><a href="services.html">Automatizare AI</a></li>
+          <li><a href="services.html">Cloud Engineering</a></li>
+          <li><a href="services.html">Cybersecurity</a></li>
+          <li><a href="services.html">DevOps &amp; CI/CD</a></li>
+          <li><a href="services.html">Data Platforms</a></li>
+          <li><a href="services.html">Managed Services</a></li>
+        </ul>
+      </div>
+      <div class="coloana-subsol">
+        <h4>Companie</h4>
+        <ul>
+          <li><a href="about.html">Despre noi</a></li>
+          <li><a href="about.html">Echipa</a></li>
+          <li><a href="blog.html">Blog &amp; Noutăți</a></li>
+          <li><a href="/alte fisiere/AxiomIT_Parteneri.docx" download>Parteneri</a></li>
+          <li><a href="/alte fisiere/AxiomIT_Cariere.docx" download>Cariere</a></li>
+          <li><a href="/alte fisiere/AxiomIT_Studii_de_Caz.xlsx" download>Studii de caz</a></li>
+        </ul>
+      </div>
+      <div class="coloana-subsol">
+        <h4>Soluții</h4>
+        <ul>
+          <li><a href="/alte fisiere/AXIOM IT - Soluții Tehnologice Complete.pptx" download>Startup-uri</a></li>
+          <li><a href="/alte fisiere/AXIOM IT - Soluții Tehnologice Complete.pptx" download>IMM-uri</a></li>
+          <li><a href="/alte fisiere/AXIOM IT - Soluții Tehnologice Complete.pptx" download>Enterprise</a></li>
+          <li><a href="/alte fisiere/AXIOM IT - Soluții Tehnologice Complete.pptx" download>Sector public</a></li>
+          <li><a href="/alte fisiere/AXIOM IT - Soluții Tehnologice Complete.pptx" download>FinTech</a></li>
+          <li><a href="/alte fisiere/AXIOM IT - Soluții Tehnologice Complete.pptx" download>Healthcare IT</a></li>
+        </ul>
+      </div>
+      <div class="coloana-contact">
+        <h4>Contact</h4>
+        <p class="linie-contact"><span class="icon-contact">📍</span> Str. Romana 12/23, Chișinău</p>
+        <p class="linie-contact"><span class="icon-contact">📞</span> +373 721 000 000</p>
+        <p class="linie-contact"><span class="icon-contact">✉️</span> <a href="mailto:info@axiom-it.md">info@axiom-it.md</a></p>
+        <p class="linie-contact"><span class="icon-contact">🕐</span> Lun–Vin: 09:00 – 18:00</p>
+        <div class="newsletter-subsol">
+          <input type="email" placeholder="Email newsletter..."/>
+          <button>Sub</button>
+        </div>
+      </div>
+    </div>
+    <div class="bara-subsol-jos">
+      <p>© 2026 Axiom IT SRL. Toate drepturile rezervate.</p>
+      <div class="linkuri-subsol-jos">
+        <a href="/alte fisiere/politica-confidentialitate.pdf" download>Politică de confidențialitate</a>
+        <a href="/alte fisiere/termeni-conditii.pdf" download>Termeni și condiții</a>
+        <a href="/alte fisiere/cookie-policy.pdf" download>Cookie policy</a>
+      </div>
+      <p class="text-dreapta-subsol">Made in MD with love 🇲🇩</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

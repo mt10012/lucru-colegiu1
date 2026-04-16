@@ -1,0 +1,30 @@
+.cinereousTable {
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+.cinereousTable th,
+.cinereousTable td {
+    border: 1px solid #9c8f84;
+    padding: 8px 12px;
+}
+.cinereousTable thead th {
+    background-color: #8b7d73;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+}
+.cinereousTable tbody td {
+    background-color: #e6ded7;
+    color: #5c5047;
+}
+.cinereousTable tfoot td {
+    background-color: #d2c6bc;
+    font-weight: bold;
+    color: #4b4038;
+}
+.cinereousTable {
+    border: 3px solid #8b7d73;
+}

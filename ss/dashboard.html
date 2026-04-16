@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Axiom IT — Dashboard</title>
+<link rel="stylesheet" href="/css/dashboard.css"/>
+</head>
+<body>
+<div class="band-stocuri">
+  <div class="pista-stocuri">
+
+    <div class="element-stoc"><span class="simbol-stoc">AMZN</span><span class="pret-stoc">$185.42</span><span class="variatie-stoc sus">▲ +2.34%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">MSFT</span><span class="pret-stoc">$419.71</span><span class="variatie-stoc sus">▲ +1.12%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">GOOGL</span><span class="pret-stoc">$171.08</span><span class="variatie-stoc jos">▼ -0.47%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">META</span><span class="pret-stoc">$527.30</span><span class="variatie-stoc sus">▲ +3.81%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">NVDA</span><span class="pret-stoc">$903.25</span><span class="variatie-stoc sus">▲ +5.20%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">AAPL</span><span class="pret-stoc">$178.19</span><span class="variatie-stoc jos">▼ -0.88%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">BTC</span><span class="pret-stoc">$68,420</span><span class="variatie-stoc sus">▲ +4.13%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">ETH</span><span class="pret-stoc">$3,841</span><span class="variatie-stoc sus">▲ +2.95%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">TSLA</span><span class="pret-stoc">$176.48</span><span class="variatie-stoc jos">▼ -1.33%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">CRM</span><span class="pret-stoc">$298.10</span><span class="variatie-stoc sus">▲ +0.74%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">SNOW</span><span class="pret-stoc">$168.33</span><span class="variatie-stoc sus">▲ +1.58%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">DDOG</span><span class="pret-stoc">$122.07</span><span class="variatie-stoc sus">▲ +0.92%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">S&P500</span><span class="pret-stoc">5,254.35</span><span class="variatie-stoc sus">▲ +0.32%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">NASDAQ</span><span class="pret-stoc">16,428.82</span><span class="variatie-stoc sus">▲ +0.54%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">EUR/USD</span><span class="pret-stoc">1.0842</span><span class="variatie-stoc jos">▼ -0.12%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">EUR/MDL</span><span class="pret-stoc">19.42</span><span class="variatie-stoc sus">▲ +0.08%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">GOLD</span><span class="pret-stoc">$2,183</span><span class="variatie-stoc sus">▲ +0.61%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">OIL</span><span class="pret-stoc">$81.47</span><span class="variatie-stoc jos">▼ -0.29%</span></div>
+    <!-- Set 2 — duplicat pentru loop infinit fără JS -->
+    <div class="element-stoc"><span class="simbol-stoc">AMZN</span><span class="pret-stoc">$185.42</span><span class="variatie-stoc sus">▲ +2.34%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">MSFT</span><span class="pret-stoc">$419.71</span><span class="variatie-stoc sus">▲ +1.12%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">GOOGL</span><span class="pret-stoc">$171.08</span><span class="variatie-stoc jos">▼ -0.47%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">META</span><span class="pret-stoc">$527.30</span><span class="variatie-stoc sus">▲ +3.81%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">NVDA</span><span class="pret-stoc">$903.25</span><span class="variatie-stoc sus">▲ +5.20%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">AAPL</span><span class="pret-stoc">$178.19</span><span class="variatie-stoc jos">▼ -0.88%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">BTC</span><span class="pret-stoc">$68,420</span><span class="variatie-stoc sus">▲ +4.13%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">ETH</span><span class="pret-stoc">$3,841</span><span class="variatie-stoc sus">▲ +2.95%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">TSLA</span><span class="pret-stoc">$176.48</span><span class="variatie-stoc jos">▼ -1.33%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">CRM</span><span class="pret-stoc">$298.10</span><span class="variatie-stoc sus">▲ +0.74%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">SNOW</span><span class="pret-stoc">$168.33</span><span class="variatie-stoc sus">▲ +1.58%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">DDOG</span><span class="pret-stoc">$122.07</span><span class="variatie-stoc sus">▲ +0.92%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">S&P500</span><span class="pret-stoc">5,254.35</span><span class="variatie-stoc sus">▲ +0.32%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">NASDAQ</span><span class="pret-stoc">16,428.82</span><span class="variatie-stoc sus">▲ +0.54%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">EUR/USD</span><span class="pret-stoc">1.0842</span><span class="variatie-stoc jos">▼ -0.12%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">EUR/MDL</span><span class="pret-stoc">19.42</span><span class="variatie-stoc sus">▲ +0.08%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">GOLD</span><span class="pret-stoc">$2,183</span><span class="variatie-stoc sus">▲ +0.61%</span></div>
+    <div class="element-stoc"><span class="simbol-stoc">OIL</span><span class="pret-stoc">$81.47</span><span class="variatie-stoc jos">▼ -0.29%</span></div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     LAYOUT PRINCIPAL
+═══════════════════════════════════════════ -->
+<div class="layout-dashboard">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <a href="index.html" class="sidebar-logo">
+      <svg viewBox="0 0 36 36" fill="none">
+        <polygon points="18,2 34,32 2,32" stroke="#3b82f6" stroke-width="2.2" fill="none"/>
+        <polygon points="10,32 26,32 18,20" fill="#3b82f6"/>
+      </svg>
+      <div class="sidebar-logo-text">
+        <span class="nume-logo">AXIOM IT</span>
+        <span class="tag-logo">AI · CLOUD · SECURITY</span>
+      </div>
+    </a>
+
+    <div class="sidebar-grup">
+      <p class="sidebar-grup-label">Principal</p>
+      <a href="#" class="sidebar-link activ"><span class="sidebar-icon">📊</span><span class="sidebar-text">Overview</span></a>
+      <a href="#panou-infrastructura" class="sidebar-link"><span class="sidebar-icon">☁️</span><span class="sidebar-text">Infrastructură</span></a>
+      <a href="#panou-securitate" class="sidebar-link"><span class="sidebar-icon">🛡️</span><span class="sidebar-text">Securitate</span></a>
+      <a href="#panou-devops" class="sidebar-link"><span class="sidebar-icon">⚡</span><span class="sidebar-text">DevOps</span></a>
+      <a href="#panou-analytics" class="sidebar-link"><span class="sidebar-icon">📈</span><span class="sidebar-text">Analytics</span></a>
+      <a href="#panou-ai" class="sidebar-link"><span class="sidebar-icon">🤖</span><span class="sidebar-text">AI Pipelines</span></a>
+      <a href="#panou-alerte" class="sidebar-link"><span class="sidebar-icon">🔔</span><span class="sidebar-text">Alerte</span><span class="sidebar-badge">3</span></a>
+    </div>
+
+    <div class="sidebar-hr"></div>
+
+    <div class="sidebar-grup">
+      <p class="sidebar-grup-label">Gestionare</p>
+      <a href="#panou-clienti" class="sidebar-link"><span class="sidebar-icon">👥</span><span class="sidebar-text">Clienți</span></a>
+      <!-- TICKETING — trigger overlay CSS -->
+      <a href="#ticketing-overlay" class="sidebar-link">
+        <span class="sidebar-icon">📋</span>
+        <span class="sidebar-text">Ticketing Tool</span>
+        <span class="sidebar-badge nou">18</span>
+      </a>
+      <a href="#panou-facturi" class="sidebar-link"><span class="sidebar-icon">📄</span><span class="sidebar-text">Facturi</span></a>
+      <a href="#panou-programari" class="sidebar-link"><span class="sidebar-icon">🗓️</span><span class="sidebar-text">Programări</span></a>
+      <a href="#panou-venituri" class="sidebar-link"><span class="sidebar-icon">💰</span><span class="sidebar-text">Venituri</span></a>
+    </div>
+
+    <div class="sidebar-hr"></div>
+
+    <div class="sidebar-grup">
+      <p class="sidebar-grup-label">Setări</p>
+      <a href="#panou-configurare" class="sidebar-link"><span class="sidebar-icon">⚙️</span><span class="sidebar-text">Configurare</span></a>
+      <a href="#panou-profil" class="sidebar-link"><span class="sidebar-icon">👤</span><span class="sidebar-text">Profil</span></a>
+      <a href="#panou-ajutor" class="sidebar-link"><span class="sidebar-icon">❓</span><span class="sidebar-text">Ajutor</span></a>
+    </div>
+
+    <div class="sidebar-profil">
+      <div class="sidebar-avatar">👤</div>
+      <div class="sidebar-profil-info">
+        <p class="profil-nume">Alexandru M.</p>
+        <p class="profil-rol">Administrator</p>
+      </div>
+      <button class="sidebar-profil-btn">⚙️</button>
+    </div>
+  </aside>
+
+
+  <!-- CONTINUT -->
+  <div class="continut-principal">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <div class="topbar-titlu">
+        <p class="breadcrumb">DASHBOARD / OVERVIEW</p>
+        <h1 class="titlu">Bun venit, Alexandru 👋</h1>
+      </div>
+
+      <div class="topbar-search">
+        <span class="topbar-search-icon">🔍</span>
+        <input type="search" placeholder="Caută servere, clienți, tichete..."/>
+      </div>
+
+      <div class="topbar-actiuni">
+        <a href="#drop-notificari" class="topbar-btn">🔔<span class="topbar-notif-dot"></span></a>
+        <a href="#drop-mesaje" class="topbar-btn">💬</a>
+        <a href="#drop-setari" class="topbar-btn">⚙️</a>
+        <div class="topbar-indicator">
+          <span class="topbar-dot-verde"></span>
+          Sisteme OK
+        </div>
+        <div class="topbar-dataora">
+          <p class="data">Lun, 23 Mar 2026</p>
+          <p class="ora">14:32 UTC+2</p>
+        </div>
+        <div class="topbar-avatar">👤</div>
+      </div>
+    </header>
+
+
+    <!-- ZONA CONTINUT -->
+    <div class="zona-dashboard">
+
+      <!-- ═══ KPI ═══ -->
+      <div class="rand-kpi">
+        <div class="kpi kpi-albastru apare">
+          <div class="kpi-sus">
+            <div><p class="kpi-eticheta">Uptime Global</p><div class="kpi-valoare">99.99%</div></div>
+            <div class="kpi-pictograma" style="background:rgba(29,78,216,.2);border:1px solid rgba(59,130,246,.3)">📡</div>
+          </div>
+          <div class="kpi-tendinta sus">▲ +0.01% față de luna trecută</div>
+          <div class="kpi-sparkline">
+            <svg viewBox="0 0 120 28" preserveAspectRatio="none">
+              <polyline points="0,20 15,18 30,22 45,14 60,16 75,10 90,8 105,6 120,4" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="kpi kpi-verde apare-1">
+          <div class="kpi-sus">
+            <div><p class="kpi-eticheta">Servere Active</p><div class="kpi-valoare">247</div></div>
+            <div class="kpi-pictograma" style="background:rgba(5,150,105,.2);border:1px solid rgba(52,211,153,.3)">🖥️</div>
+          </div>
+          <div class="kpi-tendinta sus">▲ +12 față de săptămâna trecută</div>
+          <div class="kpi-sparkline">
+            <svg viewBox="0 0 120 28" preserveAspectRatio="none">
+              <polyline points="0,22 15,20 30,21 45,18 60,17 75,15 90,14 105,12 120,11" fill="none" stroke="#34d399" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="kpi kpi-rosu apare-2 glow-rosu">
+          <div class="kpi-sus">
+            <div><p class="kpi-eticheta">Incidente Active</p><div class="kpi-valoare" style="color:#f87171">3</div></div>
+            <div class="kpi-pictograma" style="background:rgba(220,38,38,.2);border:1px solid rgba(248,113,113,.3)">⚠️</div>
+          </div>
+          <div class="kpi-tendinta sus">▼ -5 față de luna trecută</div>
+          <div class="kpi-sparkline">
+            <svg viewBox="0 0 120 28" preserveAspectRatio="none">
+              <polyline points="0,8 15,14 30,6 45,18 60,10 75,16 90,8 105,12 120,6" fill="none" stroke="#f87171" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="kpi kpi-mov apare-3">
+          <div class="kpi-sus">
+            <div><p class="kpi-eticheta">Clienți Activi</p><div class="kpi-valoare">142</div></div>
+            <div class="kpi-pictograma" style="background:rgba(124,58,237,.2);border:1px solid rgba(167,139,250,.3)">👥</div>
+          </div>
+          <div class="kpi-tendinta sus">▲ +8 clienți noi luna aceasta</div>
+          <div class="kpi-sparkline">
+            <svg viewBox="0 0 120 28" preserveAspectRatio="none">
+              <polyline points="0,24 15,22 30,20 45,19 60,17 75,15 90,13 105,11 120,9" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="kpi kpi-cyan apare-4">
+          <div class="kpi-sus">
+            <div><p class="kpi-eticheta">Trafic Rețea</p><div class="kpi-valoare">4.2 TB</div></div>
+            <div class="kpi-pictograma" style="background:rgba(8,145,178,.2);border:1px solid rgba(34,211,238,.3)">🌐</div>
+          </div>
+          <div class="kpi-tendinta sus">▲ +18% față de ieri</div>
+          <div class="kpi-sparkline">
+            <svg viewBox="0 0 120 28" preserveAspectRatio="none">
+              <polyline points="0,20 15,16 30,18 45,12 60,14 75,9 90,11 105,7 120,5" fill="none" stroke="#22d3ee" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══ GRAFICE ═══ -->
+      <div class="rand-grafice">
+
+        <div class="grafic-performanta apare">
+          <div class="grafic-cap">
+            <div>
+              <h3>Performanța Infrastructurii</h3>
+              <p>Trafic, CPU, RAM — ultimele 30 zile</p>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
+              <div class="legenduri">
+                <div class="legenda-item"><span class="legenda-dot" style="background:#3b82f6"></span>Trafic</div>
+                <div class="legenda-item"><span class="legenda-dot" style="background:#34d399"></span>CPU</div>
+                <div class="legenda-item"><span class="legenda-dot" style="background:#a78bfa"></span>RAM</div>
+              </div>
+              <div class="pilule-timp">
+                <button class="pilula-timp">7Z</button>
+                <button class="pilula-timp activ">30Z</button>
+                <button class="pilula-timp">90Z</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tooltip-grafic">
+            <div class="t-data">26 Feb 2026</div>
+            <div class="t-rand"><span class="t-dot" style="background:#3b82f6"></span><span style="color:#94a3b8">Trafic:</span><strong style="color:#fff;margin-left:4px">4.8 TB</strong></div>
+            <div class="t-rand"><span class="t-dot" style="background:#34d399"></span><span style="color:#94a3b8">CPU:</span><strong style="color:#34d399;margin-left:4px">62%</strong></div>
+            <div class="t-rand"><span class="t-dot" style="background:#a78bfa"></span><span style="color:#94a3b8">RAM:</span><strong style="color:#a78bfa;margin-left:4px">71%</strong></div>
+          </div>
+
+          <div class="zona-svg">
+            <svg viewBox="0 0 800 170" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="gfBlue" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#2563eb" stop-opacity=".45"/>
+                  <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <line x1="0" y1="42" x2="800" y2="42" stroke="#1e3a6e" stroke-width=".5" stroke-dasharray="4,4" opacity=".35"/>
+              <line x1="0" y1="85" x2="800" y2="85" stroke="#1e3a6e" stroke-width=".5" stroke-dasharray="4,4" opacity=".35"/>
+              <line x1="0" y1="128" x2="800" y2="128" stroke="#1e3a6e" stroke-width=".5" stroke-dasharray="4,4" opacity=".35"/>
+              <polygon points="0,148 57,122 114,138 171,95 228,112 285,82 342,68 399,88 456,58 513,44 570,62 627,48 684,38 741,52 800,42 800,170 0,170" fill="url(#gfBlue)"/>
+              <polyline points="0,148 57,122 114,138 171,95 228,112 285,82 342,68 399,88 456,58 513,44 570,62 627,48 684,38 741,52 800,42" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="0,158 57,152 114,160 171,142 228,148 285,136 342,142 399,130 456,136 513,124 570,132 627,120 684,128 741,116 800,120" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="0,154 57,148 114,156 171,138 228,144 285,132 342,138 399,126 456,133 513,120 570,128 627,117 684,124 741,113 800,116" fill="none" stroke="#a78bfa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="800" cy="42" r="5" fill="#60a5fa" style="filter:drop-shadow(0 0 5px #3b82f6)"/>
+            </svg>
+          </div>
+          <div class="axe-x">
+            <span>1 Feb</span><span>8 Feb</span><span>15 Feb</span><span>22 Feb</span><span>1 Mar</span><span>15 Mar</span><span>23 Mar</span>
+          </div>
+        </div>
+
+        <div class="card-ring apare-1">
+          <div class="grafic-cap"><div><h3>SLA Uptime</h3><p>Ultima lună</p></div></div>
+          <div class="zona-ring">
+            <svg width="150" height="150" viewBox="-75 -75 150 150">
+              <circle cx="0" cy="0" r="58" fill="none" stroke="#1e3a6e" stroke-width="14"/>
+              <circle cx="0" cy="0" r="58" fill="none" stroke="#3b82f6" stroke-width="14"
+                stroke-dasharray="362 2" stroke-dashoffset="90" stroke-linecap="round"
+                style="filter:drop-shadow(0 0 5px #3b82f6)"/>
+              <defs>
+                <linearGradient id="rg2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#3b82f6"/><stop offset="100%" stop-color="#4f46e5"/>
+                </linearGradient>
+              </defs>
+              <circle cx="0" cy="0" r="58" fill="none" stroke="url(#rg2)" stroke-width="14" stroke-dasharray="362 2" stroke-dashoffset="90" stroke-linecap="round"/>
+              <circle cx="0" cy="0" r="44" fill="#091430"/>
+              <text x="0" y="-6" font-family="EB Garamond,serif" font-size="22" font-weight="700" fill="#f1f5f9" text-anchor="middle">99.99</text>
+              <text x="0" y="12" font-family="DM Sans,sans-serif" font-size="10" fill="#60a5fa" text-anchor="middle">%  uptime</text>
+            </svg>
+          </div>
+          <div style="padding:0 2px">
+            <div class="rand-sla"><span class="cheie">Downtime luna aceasta</span><span class="val" style="color:#34d399">2m 34s</span></div>
+            <div class="rand-sla"><span class="cheie">Incidente P1</span><span class="val">0</span></div>
+            <div class="rand-sla"><span class="cheie">Incidente P2</span><span class="val" style="color:#f87171">3</span></div>
+            <div class="rand-sla"><span class="cheie">SLA garantat</span><span class="val" style="color:#60a5fa">99.9%</span></div>
+          </div>
+        </div>
+
+        <div class="card-alerte apare-2">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+            <div><h3 style="color:#f1f5f9;font-size:15px;margin-bottom:2px">Alerte Active</h3><p style="font-size:12px;color:#64748b;margin:0">Necesită atenție</p></div>
+            <span style="background:#dc2626;color:#fff;font-size:10px;font-weight:700;padding:3px 9px;border-radius:10px">3</span>
+          </div>
+          <div class="alerta-item alerta-critica">
+            <div class="alerta-nivel">🔴 CRITICĂ — P1</div>
+            <div class="alerta-titlu">CPU spike — eu-prod-04</div>
+            <div class="alerta-detaliu">CPU la 94% timp de 8 minute</div>
+            <div class="alerta-meta">acum 4 min · Auto-scaling declanșat</div>
+          </div>
+          <div class="alerta-item alerta-warning">
+            <div class="alerta-nivel">🟡 AVERTISMENT — P2</div>
+            <div class="alerta-titlu">Disk 85% — storage-01</div>
+            <div class="alerta-detaliu">Spațiu liber: 142 GB din 1 TB</div>
+            <div class="alerta-meta">acum 22 min · În investigare</div>
+          </div>
+          <div class="alerta-item alerta-info">
+            <div class="alerta-nivel">🔵 INFO — P3</div>
+            <div class="alerta-titlu">SSL expiră în 14 zile</div>
+            <div class="alerta-detaliu">api.axiomit.ro</div>
+            <div class="alerta-meta">acum 2 ore · Reînnoire programată</div>
+          </div>
+          <button class="btn-alerte-toate">Gestionează →</button>
+        </div>
+
+      </div>
+
+
+      <!-- ═══ TABEL SERVERE + DONUT ═══ -->
+      <div class="rand-tabel-donut">
+
+        <div class="card-tabel apare">
+          <div class="grafic-cap">
+            <div><h3>Status Servere</h3><p>247 monitorizate · actualizat acum 30s</p></div>
+            <div class="filtre-tabel">
+              <button class="filtru activ">Toate</button>
+              <button class="filtru">OK</button>
+              <button class="filtru">Alertă</button>
+            </div>
+          </div>
+
+          <table class="tabel">
+            <thead>
+              <tr>
+                <th>Server</th>
+                <th>Locație</th>
+                <th style="min-width:90px">CPU</th>
+                <th style="min-width:90px">RAM</th>
+                <th style="min-width:90px">Disk</th>
+                <th>Latență</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="stare-server"><span class="dot-server dot-online"></span><div><div class="server-nume">eu-prod-01</div><div class="server-sub">AWS eu-west-1</div></div></div></td>
+                <td style="color:#64748b;font-size:11px">Frankfurt, DE</td>
+                <td><div class="bara-cpu"><div class="bara-bg"><div class="bara-val" style="width:63%;background:#34d399"></div></div><span style="font-size:11px;color:#34d399;width:28px;flex-shrink:0">63%</span></div></td>
+                <td><div class="bara-cpu"><div class="bara-bg"><div class="bara-val" style="width:74%;background:#3b82f6"></div></div><span style="font-size:11px;color:#3b82f6;width:28px;flex-shrink:0">74%</span></div></td>
+                <td><div class="bara-cpu"><div class="bara-bg"><div class="bara-val" style="width:54%;background:#a78bfa"></div></div><span style="font-size:11px;color:#a78bfa;width:28px;flex-shrink:0">54%</span></div></td>
+                <td style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#64748b">8ms</td>
+                <td><span class="badge-stare badge-online">Online</span></td>
+              </tr>
+              <tr>
+                <td><div class="stare-server"><span class="dot-server dot-online"></span><div><div class="server-nume">eu-prod-02</div><div class="server-sub">AWS eu-west-1</div></div></div></td>
+                <td style="color:#64748b;font-size:11px">Frankfurt, DE</td>
+                <td><div class="bara-cpu"><div class="bara-bg"><div class="bara-val" style="width:76%;background:#34d399"></div></div><span style="font-size:11px;color:#34d399;width:28px;flex-shrink:0">76%</span></div></td>
+                <td><div class="bara-cpu"><div class="bara-bg"><div class="bara-val" style="width:64%;background:#3b82f6"></div></div><span style="font-size:11px;color:#3b82f6;width:28px;flex-shrink:0">64%</span></div></td>
+                <td><div class="bara-cpu"><div class="bara-bg"><div class="bara-val" style="width:60%;background:#a78bfa"></div></div><span style="font-size:11px;color:#a78bfa;width:28px;flex-shrink:0">60%</span></div></td>
+                <td style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#64748b">9ms</td>
+                <td><span class="badge-stare badge-online">Online</span></td>
+              </tr>
+              <tr>
+                <td><div class="stare-server"><span class="dot-server dot-warn"></span><div><div class="server-nume">eu-prod-04</div><div class="server-sub">AWS eu-west-1</div></div></div></td>
+                <td style="color:#64748b;font-size:11px">Frankfurt, DE</td>
+                <td><div class="bara-cpu"><div class="bara-bg"><div class="bara-val" style="width:94%;background:#dc2626"></div></div><span style="font-size:11px;color:#f87171;width:28px;flex-shrink:0">94%</span></div></td>
+                <td><div class="bara-cpu"><div class="bara-bg"><div class="bara-val" style="width:84%;background:#3b82f6"></div></div><span style="font-size:11px;color:#3b82f6;width:28px;flex-shrink:0">84%</span></div></td>
+                <td><div class="bara-cpu"><div class="bara-bg"><div class="bara-val" style="width:71%;background:#a78bfa"></div></div><span style="font-size:11px;color:#a78bfa;width:28px;flex-shrink:0">71%</span></div></td>
+                <td style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#64748b">11ms</td>
+                <td><span class="badge-stare badge-warn">⚠ Alertă</span></td>
+              </tr>
+              <tr>
+                <td><div class="stare-server"><span class="dot-server dot-online"></span><div><div class="server-nume">us-east-01</div><div class="server-sub">AWS us-east-1</div></div></div></td>
+                <td style="color:#64748b;font-size:11px">Virginia, US</td>
+                <td><div class="bara-cpu"><div class="bara-bg"><div class="bara-val" style="width:50%;background:#34d399"></div></div><span style="font-size:11px;color:#34d399;width:28px;flex-shrink:0">50%</span></div></td>
+                <td><div class="bara-cpu"><div class="bara-bg"><div class="bara-val" style="width:57%;background:#3b82f6"></div></div><span style="font-size:11px;color:#3b82f6;width:28px;flex-shrink:0">57%</span></div></td>
+                <td><div class="bara-cpu"><div class="bara-bg"><div class="bara-val" style="width:46%;background:#a78bfa"></div></div><span style="font-size:11px;color:#a78bfa;width:28px;flex-shrink:0">46%</span></div></td>
+                <td style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#64748b">42ms</td>
+                <td><span class="badge-stare badge-online">Online</span></td>
+              </tr>
+              <tr>
+                <td><div class="stare-server"><span class="dot-server dot-err"></span><div><div class="server-nume">storage-01</div><div class="server-sub">Azure westeurope</div></div></div></td>
+                <td style="color:#64748b;font-size:11px">Amsterdam, NL</td>
+                <td><div style="font-size:11px;color:#334155;font-family:'JetBrains Mono',monospace">—</div></td>
+                <td><div style="font-size:11px;color:#334155;font-family:'JetBrains Mono',monospace">—</div></td>
+                <td><div class="bara-cpu"><div class="bara-bg"><div class="bara-val" style="width:85%;background:#dc2626"></div></div><span style="font-size:11px;color:#f87171;width:28px;flex-shrink:0">85%</span></div></td>
+                <td style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#334155">—</td>
+                <td><span class="badge-stare badge-warning">⚠ Warning</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="paginare">
+            <p class="paginare-text">Afișare 1–5 din 247 servere</p>
+            <div class="paginare-btn">
+              <button class="pg-btn">←</button>
+              <button class="pg-btn activ">1</button>
+              <button class="pg-btn">2</button>
+              <button class="pg-btn">3</button>
+              <button class="pg-btn">→</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-donut apare-1">
+          <div class="grafic-cap"><div><h3>Distribuție Servicii</h3><p>142 clienți activi</p></div></div>
+          <div class="zona-donut">
+            <svg width="150" height="150" viewBox="-75 -75 150 150">
+              <path d="M 0,-65 A 65,65 0 0,1 61.7,-21.7" fill="none" stroke="#3b82f6" stroke-width="20"/>
+              <path d="M 61.7,-21.7 A 65,65 0 0,1 50.3,43.2" fill="none" stroke="#a78bfa" stroke-width="20"/>
+              <path d="M 50.3,43.2 A 65,65 0 0,1 -20,62" fill="none" stroke="#34d399" stroke-width="20"/>
+              <path d="M -20,62 A 65,65 0 0,1 -65,0" fill="none" stroke="#fbbf24" stroke-width="20"/>
+              <path d="M -65,0 A 65,65 0 0,1 -32.5,-56.3" fill="none" stroke="#f472b6" stroke-width="20"/>
+              <path d="M -32.5,-56.3 A 65,65 0 0,1 0,-65" fill="none" stroke="#22d3ee" stroke-width="20"/>
+              <circle cx="0" cy="0" r="46" fill="#091430"/>
+              <text x="0" y="-5" font-family="EB Garamond,serif" font-size="20" font-weight="700" fill="#f1f5f9" text-anchor="middle">142</text>
+              <text x="0" y="12" font-family="DM Sans,sans-serif" font-size="9" fill="#64748b" text-anchor="middle">clienți</text>
+            </svg>
+          </div>
+          <div class="legenda-donut">
+            <div class="legenda-donut-item"><div class="legenda-stg"><div class="legenda-patrat" style="background:#3b82f6"></div><span class="legenda-text">Cloud</span></div><div style="display:flex;align-items:center;gap:7px;flex:1;justify-content:flex-end"><div class="legenda-bara-bg"><div class="legenda-bara-val" style="width:100%;background:#3b82f6"></div></div><span class="legenda-procent">32%</span></div></div>
+            <div class="legenda-donut-item"><div class="legenda-stg"><div class="legenda-patrat" style="background:#a78bfa"></div><span class="legenda-text">Security</span></div><div style="display:flex;align-items:center;gap:7px;flex:1;justify-content:flex-end"><div class="legenda-bara-bg"><div class="legenda-bara-val" style="width:69%;background:#a78bfa"></div></div><span class="legenda-procent">22%</span></div></div>
+            <div class="legenda-donut-item"><div class="legenda-stg"><div class="legenda-patrat" style="background:#34d399"></div><span class="legenda-text">AI</span></div><div style="display:flex;align-items:center;gap:7px;flex:1;justify-content:flex-end"><div class="legenda-bara-bg"><div class="legenda-bara-val" style="width:56%;background:#34d399"></div></div><span class="legenda-procent">18%</span></div></div>
+            <div class="legenda-donut-item"><div class="legenda-stg"><div class="legenda-patrat" style="background:#fbbf24"></div><span class="legenda-text">DevOps</span></div><div style="display:flex;align-items:center;gap:7px;flex:1;justify-content:flex-end"><div class="legenda-bara-bg"><div class="legenda-bara-val" style="width:47%;background:#fbbf24"></div></div><span class="legenda-procent">15%</span></div></div>
+            <div class="legenda-donut-item"><div class="legenda-stg"><div class="legenda-patrat" style="background:#f472b6"></div><span class="legenda-text">Data</span></div><div style="display:flex;align-items:center;gap:7px;flex:1;justify-content:flex-end"><div class="legenda-bara-bg"><div class="legenda-bara-val" style="width:25%;background:#f472b6"></div></div><span class="legenda-procent">8%</span></div></div>
+            <div class="legenda-donut-item"><div class="legenda-stg"><div class="legenda-patrat" style="background:#22d3ee"></div><span class="legenda-text">Managed</span></div><div style="display:flex;align-items:center;gap:7px;flex:1;justify-content:flex-end"><div class="legenda-bara-bg"><div class="legenda-bara-val" style="width:16%;background:#22d3ee"></div></div><span class="legenda-procent">5%</span></div></div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- ═══ RAND INFERIOR ═══ -->
+      <div class="rand-inferior">
+
+        <div class="card-tichete apare">
+          <div class="grafic-cap" style="padding:0 0 12px"><div><h3>Tichete Suport</h3><p>18 deschise · 4 urgente</p></div></div>
+          <div class="stat-tichete">
+            <div class="stat-tic"><div class="num" style="color:#fbbf24">18</div><div class="lbl">Deschise</div></div>
+            <div class="stat-tic"><div class="num" style="color:#f87171">4</div><div class="lbl">Urgente</div></div>
+            <div class="stat-tic"><div class="num" style="color:#34d399">142</div><div class="lbl">Rezolvate</div></div>
+            <div class="stat-tic"><div class="num" style="color:#60a5fa">2.4h</div><div class="lbl">Timp mediu</div></div>
+          </div>
+          <div class="tichet tic-p1"><div class="tic-nivel">#1847 · URGENT · P1</div><div class="tic-titlu">CPU overload — eu-prod-04</div><div class="tic-meta">acum 4 min · Andrei P.</div></div>
+          <div class="tichet tic-p2"><div class="tic-nivel">#1846 · RIDICAT · P2</div><div class="tic-titlu">Disk critică — storage-01</div><div class="tic-meta">acum 22 min · Ioana D.</div></div>
+          <div class="tichet tic-p3"><div class="tic-nivel">#1845 · MEDIU · P3</div><div class="tic-titlu">Certificat SSL api.axiomit.ro</div><div class="tic-meta">acum 2h · Alexandru M.</div></div>
+          <div class="tichet tic-p4"><div class="tic-nivel">#1844 · SCĂZUT · P4</div><div class="tic-titlu">Actualizare documentație API</div><div class="tic-meta">ieri · Radu T.</div></div>
+          <button class="btn-tic">Toate tichetele →</button>
+        </div>
+
+        <div class="card-activitate apare-1">
+          <div class="grafic-cap" style="padding:0 0 12px"><div><h3>Activitate Recentă</h3><p>Ultimele acțiuni în sistem</p></div></div>
+          <div class="activitate-item"><div class="activitate-nod" style="background:rgba(5,150,105,.2)">✅</div><div class="activitate-continut"><h4>Deploy reușit — axiomit-api v3.2.1</h4><p class="detaliu">eu-prod-01, eu-prod-02 · GitHub Actions</p><p class="timp">acum 14 minute</p></div></div>
+          <div class="activitate-item"><div class="activitate-nod" style="background:rgba(220,38,38,.2)">🚨</div><div class="activitate-continut"><h4>Alertă CPU — eu-prod-04</h4><p class="detaliu">Threshold 90% depășit · Auto-scale activ</p><p class="timp">acum 22 minute</p></div></div>
+          <div class="activitate-item"><div class="activitate-nod" style="background:rgba(29,78,216,.2)">💾</div><div class="activitate-continut"><h4>Backup zilnic completat</h4><p class="detaliu">14 servere · 2.3 TB · 12 min durată</p><p class="timp">acum 1 oră</p></div></div>
+          <div class="activitate-item"><div class="activitate-nod" style="background:rgba(124,58,237,.2)">👤</div><div class="activitate-continut"><h4>Client nou — TechCorp SRL</h4><p class="detaliu">Plan Business · Onboarding complet</p><p class="timp">acum 3 ore</p></div></div>
+          <div class="activitate-item"><div class="activitate-nod" style="background:rgba(180,83,9,.2)">🔐</div><div class="activitate-continut"><h4>Pentest completat — axiomit.ro</h4><p class="detaliu">0 vulnerabilități critice · Raport PDF</p><p class="timp">acum 6 ore</p></div></div>
+          <div class="activitate-item"><div class="activitate-nod" style="background:rgba(8,145,178,.2)">🏗️</div><div class="activitate-continut"><h4>Terraform apply — EU cluster</h4><p class="detaliu">12 resurse create, 3 modificate</p><p class="timp">acum 8 ore</p></div></div>
+        </div>
+
+        <div class="card-actiuni apare-2">
+          <div class="grafic-cap" style="padding:0 0 6px"><div><h3>Acțiuni Rapide</h3><p>Comenzi frecvente</p></div></div>
+          <div class="grila-actiuni">
+            <a href="#" class="btn-actiune a-blue"><span class="emoji">🚀</span><div class="titlu-a">Deploy Nou</div><div class="sub-a">GitHub Actions · CI/CD</div></a>
+            <a href="#" class="btn-actiune a-green"><span class="emoji">📊</span><div class="titlu-a">Raport PDF</div><div class="sub-a">Generează lunar</div></a>
+            <a href="#" class="btn-actiune a-purple"><span class="emoji">🛡️</span><div class="titlu-a">Scan Sec</div><div class="sub-a">Audit OWASP</div></a>
+            <a href="#" class="btn-actiune a-cyan"><span class="emoji">💾</span><div class="titlu-a">Backup</div><div class="sub-a">Snapshot imediat</div></a>
+            <a href="#" class="btn-actiune a-amber"><span class="emoji">👤</span><div class="titlu-a">Client Nou</div><div class="sub-a">Onboarding</div></a>
+            <a href="#ticketing-overlay" class="btn-actiune a-pink"><span class="emoji">📋</span><div class="titlu-a">Tichet Nou</div><div class="sub-a">Deschide P1-P4</div></a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- ═══ SECURITATE + AI + CALENDAR ═══ -->
+      <div class="rand-sec-ai">
+
+        <div class="card-securitate apare">
+          <div class="grafic-cap" style="padding:0 0 14px"><div><h3>Scor Securitate</h3><p style="display:flex;align-items:center;gap:6px">Scor total: <strong style="color:#a78bfa;font-size:16px">91/100</strong></p></div></div>
+          <div class="bara-sec-item"><div class="bara-sec-sus"><span class="bara-sec-lbl">Firewall &amp; Network</span><span class="bara-sec-val" style="color:#34d399">94%</span></div><div class="bara-sec-bg"><div class="bara-sec-fill" style="width:94%;background:#34d399"></div></div></div>
+          <div class="bara-sec-item"><div class="bara-sec-sus"><span class="bara-sec-lbl">Patch Management</span><span class="bara-sec-val" style="color:#a78bfa">86%</span></div><div class="bara-sec-bg"><div class="bara-sec-fill" style="width:86%;background:#a78bfa"></div></div></div>
+          <div class="bara-sec-item"><div class="bara-sec-sus"><span class="bara-sec-lbl">Access Control (IAM)</span><span class="bara-sec-val" style="color:#a78bfa">93%</span></div><div class="bara-sec-bg"><div class="bara-sec-fill" style="width:93%;background:#a78bfa"></div></div></div>
+          <div class="bara-sec-item"><div class="bara-sec-sus"><span class="bara-sec-lbl">Encryption (AES-256)</span><span class="bara-sec-val" style="color:#34d399">98%</span></div><div class="bara-sec-bg"><div class="bara-sec-fill" style="width:98%;background:#34d399"></div></div></div>
+          <div class="bara-sec-item"><div class="bara-sec-sus"><span class="bara-sec-lbl">Incident Response</span><span class="bara-sec-val" style="color:#fbbf24">81%</span></div><div class="bara-sec-bg"><div class="bara-sec-fill" style="width:81%;background:#fbbf24"></div></div></div>
+          <div class="bara-sec-item"><div class="bara-sec-sus"><span class="bara-sec-lbl">Compliance GDPR</span><span class="bara-sec-val" style="color:#a78bfa">89%</span></div><div class="bara-sec-bg"><div class="bara-sec-fill" style="width:89%;background:#a78bfa"></div></div></div>
+          <div class="bara-sec-item"><div class="bara-sec-sus"><span class="bara-sec-lbl">Pentest Score</span><span class="bara-sec-val" style="color:#34d399">95%</span></div><div class="bara-sec-bg"><div class="bara-sec-fill" style="width:95%;background:#34d399"></div></div></div>
+        </div>
+
+        <div class="card-ai-pipelines apare-1">
+          <div class="grafic-cap" style="padding:0 0 4px"><div><h3>AI Pipelines</h3><p>6 pipeline-uri active în producție</p></div></div>
+          <div class="pipeline-item pip-activ"><div class="pip-sus"><span class="pip-titlu">LLM Document Classifier — FinTech</span><span class="pip-badge badge-activ">● Activ</span></div><div class="pip-det">GPT-4o · 14,892 req/zi · Latență: 320ms</div><div class="pip-meta">Cost luna: €342 · Acuratețe: 97.8%</div></div>
+          <div class="pipeline-item pip-activ"><div class="pip-sus"><span class="pip-titlu">Computer Vision QA — MedTech</span><span class="pip-badge badge-activ">● Activ</span></div><div class="pip-det">YOLOv8 · 2,340 imagini/zi · Acuratețe: 98.2%</div><div class="pip-meta">Cost luna: €218 · GPU: A100</div></div>
+          <div class="pipeline-item pip-warn"><div class="pip-sus"><span class="pip-titlu">RPA Facturare — Retail Group</span><span class="pip-badge badge-warn">⚠ Warning</span></div><div class="pip-det">UiPath · 890 facturi/zi · Erori: 2 (0.2%)</div><div class="pip-meta">Cost luna: €156 · Revizie necesară</div></div>
+          <div class="pipeline-item pip-activ"><div class="pip-sus"><span class="pip-titlu">NLP Sentiment — Industria Corp</span><span class="pip-badge badge-activ">● Activ</span></div><div class="pip-det">Claude 3.5 · 5,200 texte/zi</div><div class="pip-meta">Cost luna: €124 · Latență: 180ms</div></div>
+          <div class="pipeline-item pip-info"><div class="pip-sus"><span class="pip-titlu">RAG Knowledge Base — TechCorp</span><span class="pip-badge" style="background:rgba(29,78,216,.15);border:1px solid rgba(59,130,246,.3);color:#60a5fa">🔄 Setup</span></div><div class="pip-det">LangChain + Pinecone · În configurare</div><div class="pip-meta">Go-live estimat: 27 Mar 2026</div></div>
+        </div>
+
+        <div class="card-calendar apare-2">
+          <div class="grafic-cap" style="padding:0 0 8px"><div><h3>Programări</h3><p>Mentenanță &amp; consultanțe</p></div></div>
+          <div class="ev-calendar"><div class="ev-data" style="background:var(--grad-blue)"><span class="zi">24</span><span class="luna">MAR</span></div><div class="ev-info"><div class="ev-titlu">Mentenanță EU cluster</div><div class="ev-det">02:00–04:00 UTC · 0 downtime</div><div class="ev-resp">Ioana D. + DevOps</div></div></div>
+          <div class="ev-calendar"><div class="ev-data" style="background:var(--grad-purple)"><span class="zi">26</span><span class="luna">MAR</span></div><div class="ev-info"><div class="ev-titlu">Consultanță — FinTech SA</div><div class="ev-det">10:00–11:30 · Google Meet</div><div class="ev-resp">Alexandru M. + Maria C.</div></div></div>
+          <div class="ev-calendar"><div class="ev-data" style="background:var(--grad-green)"><span class="zi">01</span><span class="luna">APR</span></div><div class="ev-info"><div class="ev-titlu">Pentest trimestrial — MedTech</div><div class="ev-det">09:00–18:00 · Onsite</div><div class="ev-resp">Andrei P. + echipa Sec</div></div></div>
+          <div class="ev-calendar"><div class="ev-data" style="background:var(--grad-cyan)"><span class="zi">03</span><span class="luna">APR</span></div><div class="ev-info"><div class="ev-titlu">Review lunar infrastructură</div><div class="ev-det">14:00–15:00 · Intern</div><div class="ev-resp">Echipa tehnică</div></div></div>
+        </div>
+
+      </div>
+
+
+      <!-- ═══ VENITURI + CLIENTI ═══ -->
+      <div class="rand-venituri">
+
+        <div class="card-venituri apare">
+          <div class="grafic-cap" style="padding:0 0 10px">
+            <div><h3>Evoluție Venituri</h3><p>Ultimele 12 luni (EUR)</p></div>
+            <div style="text-align:right"><div style="font-family:'EB Garamond',serif;font-size:24px;font-weight:700;color:#34d399">€149.720</div><div style="font-size:11px;color:#34d399">▲ +23% YoY</div></div>
+          </div>
+          <div class="venituri-sumar">
+            <div class="vs-item"><h3 style="color:#34d399">€1.79M</h3><p>Total 12 luni</p></div>
+            <div class="vs-item"><h3 style="color:#60a5fa">€149K</h3><p>Luna curentă</p></div>
+            <div class="vs-item"><h3 style="color:#fbbf24">€18.4K</h3><p>Top client</p></div>
+          </div>
+          <div class="bare-container">
+            <div class="bara" style="height:55%;background:rgba(29,78,216,.4)"><span class="b-val">€87K</span></div>
+            <div class="bara" style="height:58%;background:rgba(29,78,216,.42)"><span class="b-val">€91K</span></div>
+            <div class="bara" style="height:62%;background:rgba(29,78,216,.46)"><span class="b-val">€96K</span></div>
+            <div class="bara" style="height:64%;background:rgba(29,78,216,.48)"><span class="b-val">€99K</span></div>
+            <div class="bara" style="height:66%;background:rgba(29,78,216,.5)"><span class="b-val">€101K</span></div>
+            <div class="bara" style="height:70%;background:rgba(29,78,216,.52)"><span class="b-val">€108K</span></div>
+            <div class="bara" style="height:76%;background:rgba(29,78,216,.55)"><span class="b-val">€118K</span></div>
+            <div class="bara" style="height:83%;background:rgba(29,78,216,.6)"><span class="b-val">€128K</span></div>
+            <div class="bara" style="height:89%;background:rgba(29,78,216,.64)"><span class="b-val">€136K</span></div>
+            <div class="bara" style="height:93%;background:rgba(52,211,153,.5)"><span class="b-val">€142K</span></div>
+            <div class="bara" style="height:97%;background:rgba(52,211,153,.55)"><span class="b-val">€148K</span></div>
+            <div class="bara" style="height:100%;background:linear-gradient(to top,#059669,#34d399)"><span class="b-val" style="color:#34d399;font-weight:700">€150K</span></div>
+          </div>
+          <div class="bare-labels">
+            <span class="bl">Apr</span><span class="bl">Mai</span><span class="bl">Iun</span>
+            <span class="bl">Iul</span><span class="bl">Aug</span><span class="bl">Sep</span>
+            <span class="bl">Oct</span><span class="bl">Nov</span><span class="bl">Dec</span>
+            <span class="bl">Ian</span><span class="bl">Feb</span>
+            <span class="bl" style="color:#34d399;font-weight:600">Mar●</span>
+          </div>
+        </div>
+
+        <div class="card-clienti apare-1">
+          <div class="grafic-cap" style="padding:0 0 8px"><div><h3>Top Clienți</h3><p>Valoare contract lunar</p></div></div>
+          <div class="client-item"><div class="client-avatar" style="background:var(--grad-blue)">🏦</div><div class="client-info"><div class="cl-name">FinTech Solutions SA</div><div class="cl-det">Enterprise · 3 ani</div></div><div class="client-val"><div class="cl-sum">€18.400</div><div class="cl-plan">/ lună</div></div></div>
+          <div class="client-item"><div class="client-avatar" style="background:var(--grad-purple)">🏪</div><div class="client-info"><div class="cl-name">Retail Group RO</div><div class="cl-det">Enterprise · 2 ani</div></div><div class="client-val"><div class="cl-sum">€12.800</div><div class="cl-plan">/ lună</div></div></div>
+          <div class="client-item"><div class="client-avatar" style="background:var(--grad-cyan)">🏥</div><div class="client-info"><div class="cl-name">MedTech Systems</div><div class="cl-det">Business · 1 an</div></div><div class="client-val"><div class="cl-sum">€8.950</div><div class="cl-plan">/ lună</div></div></div>
+          <div class="client-item"><div class="client-avatar" style="background:var(--grad-green)">🏭</div><div class="client-info"><div class="cl-name">Industria Corp SA</div><div class="cl-det">Business · 8 luni</div></div><div class="client-val"><div class="cl-sum">€6.200</div><div class="cl-plan">/ lună</div></div></div>
+          <div class="client-item"><div class="client-avatar" style="background:var(--grad-amber)">🚀</div><div class="client-info"><div class="cl-name">TechCorp SRL</div><div class="cl-det">Business · Nou</div></div><div class="client-val"><div class="cl-sum">€4.500</div><div class="cl-plan">/ lună</div></div></div>
+        </div>
+
+      </div>
+
+    </div><!-- /zona-dashboard -->
+
+
+    <!-- FOOTER -->
+    <footer class="footer-dash">
+      <p>© 2026 Axiom IT SRL. Toate drepturile rezervate.</p>
+      <div class="footer-dash-links">
+        <a href="politica-confidentialitate.pdf" download>Politică de confidențialitate</a>
+        <a href="termeni-conditii.pdf" download>Termeni și condiții</a>
+        <a href="cookie-policy.pdf" download>Cookie policy</a>
+      </div>
+      <p>Made in MD with love 🇲🇩</p>
+    </footer>
+
+  </div><!-- /continut-principal -->
+
+</div><!-- /layout-dashboard -->
+
+
+<!-- ═══════════════════════════════════════════
+     OVERLAY TICKETING TOOL — CSS ONLY (:target)
+     Se deschide cu <a href="#ticketing-overlay">
+     Se închide cu <a href="#close"> sau href="#"
+═══════════════════════════════════════════ -->
+<div class="overlay-ticketing" id="ticketing-overlay">
+
+  <!-- Click pe fundal = închide -->
+  <a href="#" class="overlay-fundal" aria-label="Închide"></a>
+
+  <!-- Panoul lateral -->
+  <div class="overlay-panou">
+    <div class="overlay-accentbar"></div>
+
+    <!-- Header -->
+    <div class="overlay-header">
+      <div class="overlay-header-stg">
+        <div class="overlay-logo-mic">
+          <svg width="20" height="20" viewBox="0 0 36 36" fill="none">
+            <polygon points="18,2 34,32 2,32" stroke="#fff" stroke-width="2.2" fill="none"/>
+            <polygon points="10,32 26,32 18,20" fill="#fff"/>
+          </svg>
+        </div>
+        <div class="overlay-header-info">
+          <div class="overlay-titlu">AXIOM IT</div>
+          <div class="overlay-sub">Ticketing Tool · Tichete suport</div>
+        </div>
+      </div>
+      <a href="#" class="btn-inchide-overlay" aria-label="Închide">✕</a>
+    </div>
+
+    <!-- Stats -->
+    <div class="overlay-stats">
+      <div class="ov-stat"><div class="num" style="color:#fbbf24">18</div><div class="lbl">Deschise</div></div>
+      <div class="ov-stat"><div class="num" style="color:#f87171">4</div><div class="lbl">Urgente</div></div>
+      <div class="ov-stat"><div class="num" style="color:#34d399">142</div><div class="lbl">Rezolvate</div></div>
+      <div class="ov-stat"><div class="num" style="color:#60a5fa">2.4h</div><div class="lbl">Timp mediu</div></div>
+    </div>
+
+    <!-- Toolbar -->
+    <div class="overlay-toolbar">
+      <div class="ov-search">
+        <span class="ov-search-icon">🔍</span>
+        <input type="search" placeholder="Caută tichete..."/>
+      </div>
+      <div class="ov-filtru-grup">
+        <button class="ov-filtru activ">Toate</button>
+        <button class="ov-filtru">P1</button>
+        <button class="ov-filtru">P2</button>
+        <button class="ov-filtru">Open</button>
+      </div>
+      <button class="btn-tic-nou">+ Tichet nou</button>
+    </div>
+
+    <!-- Lista tichete -->
+    <div class="overlay-lista">
+
+      <div class="ov-sectiune-label">🔴 Urgente — P1 &amp; P2</div>
+
+      <div class="ov-tichet ov-p1">
+        <div class="ov-tic-sus">
+          <span class="ov-id">#1847</span>
+          <span class="ov-prioritate pr-critica">P1 · CRITICĂ</span>
+          <span class="ov-categorie">Infrastructură</span>
+        </div>
+        <div class="ov-tic-titlu">CPU overload critic — server eu-prod-04</div>
+        <div class="ov-tic-desc">CPU la 94% timp de 8 minute consecutive. Auto-scaling declanșat dar insuficient. Necesită intervenție manuală.</div>
+        <div class="ov-tic-jos">
+          <div class="ov-resp"><div class="ov-resp-avatar" style="background:var(--grad-cyan)">👤</div>Andrei P.</div>
+          <span class="ov-timp">acum 4 minute</span>
+          <div class="ov-tic-actiuni">
+            <button class="ov-btn-mic primar">Preia</button>
+            <button class="ov-btn-mic">Escaladează</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ov-tichet ov-p2">
+        <div class="ov-tic-sus">
+          <span class="ov-id">#1846</span>
+          <span class="ov-prioritate pr-ridicat">P2 · RIDICAT</span>
+          <span class="ov-categorie">Storage</span>
+        </div>
+        <div class="ov-tic-titlu">Disk usage critică — storage-01 Amsterdam</div>
+        <div class="ov-tic-desc">Utilizare disk la 85% (858 GB din 1 TB). La rata curentă, se va umple în ~72 ore fără intervenție.</div>
+        <div class="ov-tic-jos">
+          <div class="ov-resp"><div class="ov-resp-avatar" style="background:var(--grad-green)">👤</div>Ioana D.</div>
+          <span class="ov-timp">acum 22 minute</span>
+          <div class="ov-tic-actiuni">
+            <button class="ov-btn-mic primar">Preia</button>
+            <button class="ov-btn-mic">Detalii</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ov-sectiune-label">🔵 În progres — P3</div>
+
+      <div class="ov-tichet ov-p3">
+        <div class="ov-tic-sus">
+          <span class="ov-id">#1845</span>
+          <span class="ov-prioritate pr-mediu">P3 · MEDIU</span>
+          <span class="ov-categorie">Securitate</span>
+        </div>
+        <div class="ov-tic-titlu">Certificat SSL expiră în 14 zile — api.axiomit.ro</div>
+        <div class="ov-tic-desc">Certificatul SSL pentru api.axiomit.ro expiră pe 6 Apr 2026. Reînnoire automată configurată, verificare necesară.</div>
+        <div class="ov-tic-jos">
+          <div class="ov-resp"><div class="ov-resp-avatar" style="background:var(--grad-blue)">👤</div>Alexandru M.</div>
+          <span class="ov-timp">acum 2 ore</span>
+          <div class="ov-tic-actiuni">
+            <button class="ov-btn-mic">Rezolvă</button>
+            <button class="ov-btn-mic">Detalii</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ov-tichet ov-p3">
+        <div class="ov-tic-sus">
+          <span class="ov-id">#1843</span>
+          <span class="ov-prioritate pr-mediu">P3 · MEDIU</span>
+          <span class="ov-categorie">DevOps</span>
+        </div>
+        <div class="ov-tic-titlu">Pipeline CI/CD lent — TechCorp deployment</div>
+        <div class="ov-tic-desc">Pipeline GitHub Actions rulează 18 min față de normalul de 6 min. Posibil cache invalidat sau runner congestionat.</div>
+        <div class="ov-tic-jos">
+          <div class="ov-resp"><div class="ov-resp-avatar" style="background:var(--grad-purple)">👤</div>Maria C.</div>
+          <span class="ov-timp">acum 4 ore</span>
+          <div class="ov-tic-actiuni">
+            <button class="ov-btn-mic">Rezolvă</button>
+            <button class="ov-btn-mic">Detalii</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ov-sectiune-label">⚪ Normale — P4 &amp; P5</div>
+
+      <div class="ov-tichet ov-p4">
+        <div class="ov-tic-sus">
+          <span class="ov-id">#1844</span>
+          <span class="ov-prioritate pr-scazut">P4 · SCĂZUT</span>
+          <span class="ov-categorie">Documentație</span>
+        </div>
+        <div class="ov-tic-titlu">Actualizare documentație API v3.2</div>
+        <div class="ov-tic-desc">Endpoint-urile noi din v3.2 nu sunt documentate în Swagger. Necesară actualizare înainte de release public.</div>
+        <div class="ov-tic-jos">
+          <div class="ov-resp"><div class="ov-resp-avatar" style="background:var(--grad-pink)">👤</div>Radu T.</div>
+          <span class="ov-timp">ieri</span>
+          <div class="ov-tic-actiuni">
+            <button class="ov-btn-mic">Asignează</button>
+            <button class="ov-btn-mic">Detalii</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ov-tichet ov-p5">
+        <div class="ov-tic-sus">
+          <span class="ov-id">#1842</span>
+          <span class="ov-prioritate pr-info">P5 · INFO</span>
+          <span class="ov-categorie">Monitorizare</span>
+        </div>
+        <div class="ov-tic-titlu">Revizuire threshold-uri alerte Grafana</div>
+        <div class="ov-tic-desc">Threshold-urile pentru alertele de CPU sunt prea sensibile, generând false positives. Necesită ajustare.</div>
+        <div class="ov-tic-jos">
+          <div class="ov-resp"><div class="ov-resp-avatar" style="background:var(--grad-green)">👤</div>Ioana D.</div>
+          <span class="ov-timp">acum 2 zile</span>
+          <div class="ov-tic-actiuni">
+            <button class="ov-btn-mic">Asignează</button>
+            <button class="ov-btn-mic">Detalii</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ov-tichet ov-p5">
+        <div class="ov-tic-sus">
+          <span class="ov-id">#1841</span>
+          <span class="ov-prioritate pr-info">P5 · INFO</span>
+          <span class="ov-categorie">Cost</span>
+        </div>
+        <div class="ov-tic-titlu">Analiză costuri AWS — contul Retail Group</div>
+        <div class="ov-tic-desc">Costurile AWS ale clientului Retail Group au crescut cu 12% față de luna trecută. Identificare cauze și recomandări FinOps.</div>
+        <div class="ov-tic-jos">
+          <div class="ov-resp"><div class="ov-resp-avatar" style="background:var(--grad-amber)">👤</div>Elena V.</div>
+          <span class="ov-timp">acum 3 zile</span>
+          <div class="ov-tic-actiuni">
+            <button class="ov-btn-mic">Asignează</button>
+            <button class="ov-btn-mic">Detalii</button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /overlay-lista -->
+
+    <!-- Footer overlay -->
+    <div class="overlay-footer">
+      <div class="ov-footer-info">Afișare <strong>7</strong> din <strong>18</strong> tichete deschise</div>
+      <div class="ov-footer-btns">
+        <a href="#" class="ov-footer-btn secundar">Exportă CSV</a>
+        <a href="#" class="ov-footer-btn primar">+ Tichet nou</a>
+      </div>
+    </div>
+
+  </div><!-- /overlay-panou -->
+</div><!-- /overlay-ticketing -->
+
+
+<!-- ═══════════════════════════════════
+     DROPDOWN NOTIFICARI
+═══════════════════════════════════ -->
+<div class="overlay-dropdown" id="drop-notificari">
+  <a href="#" class="overlay-bg"></a>
+  <div class="dropdown-card">
+    <div class="panou-header">
+      <div class="panou-header-accent"></div>
+      <div class="panou-header-stg">
+        <div class="panou-header-icon" style="background:rgba(220,38,38,.15);border:1px solid rgba(248,113,113,.3)">🔔</div>
+        <div class="panou-header-info">
+          <div class="panou-titlu">Notificări</div>
+          <div class="panou-sub">3 necitite din 12 totale</div>
+        </div>
+      </div>
+      <a href="#" class="btn-close">✕</a>
+    </div>
+    <div class="notif-header-extra">
+      <div class="notif-tabs">
+        <button class="notif-tab activ">Toate</button>
+        <button class="notif-tab">Necitite (3)</button>
+        <button class="notif-tab">Sistem</button>
+      </div>
+      <a href="#" class="notif-marca-toate">Marchează toate citite</a>
+    </div>
+    <div class="panou-corp">
+      <div class="notif-item necitita">
+        <div class="notif-icon" style="background:rgba(220,38,38,.15);border:1px solid rgba(248,113,113,.25)">🚨</div>
+        <div class="notif-continut">
+          <div class="notif-titlu">CPU critic — eu-prod-04 la 94%</div>
+          <div class="notif-desc">Serverul eu-prod-04 a atins 94% utilizare CPU. Auto-scaling a fost declanșat automat.</div>
+          <div class="notif-timp">acum 4 minute</div>
+        </div>
+      </div>
+      <div class="notif-item necitita">
+        <div class="notif-icon" style="background:rgba(217,119,6,.15);border:1px solid rgba(251,191,36,.25)">💾</div>
+        <div class="notif-continut">
+          <div class="notif-titlu">Disk storage-01 la 85%</div>
+          <div class="notif-desc">Spațiul de stocare pe storage-01 Amsterdam a depășit pragul de avertizare de 80%.</div>
+          <div class="notif-timp">acum 22 minute</div>
+        </div>
+      </div>
+      <div class="notif-item necitita">
+        <div class="notif-icon" style="background:rgba(5,150,105,.15);border:1px solid rgba(52,211,153,.25)">✅</div>
+        <div class="notif-continut">
+          <div class="notif-titlu">Deploy reușit — axiomit-api v3.2.1</div>
+          <div class="notif-desc">Pipeline GitHub Actions finalizat cu succes pe eu-prod-01 și eu-prod-02.</div>
+          <div class="notif-timp">acum 14 minute</div>
+        </div>
+      </div>
+      <div class="notif-item">
+        <div class="notif-icon" style="background:rgba(29,78,216,.15);border:1px solid rgba(59,130,246,.25)">👤</div>
+        <div class="notif-continut">
+          <div class="notif-titlu">Client nou înregistrat</div>
+          <div class="notif-desc">TechCorp SRL a finalizat procesul de onboarding pe planul Business.</div>
+          <div class="notif-timp">acum 3 ore</div>
+        </div>
+      </div>
+      <div class="notif-item">
+        <div class="notif-icon" style="background:rgba(124,58,237,.15);border:1px solid rgba(167,139,250,.25)">🔐</div>
+        <div class="notif-continut">
+          <div class="notif-titlu">Pentest completat — axiomit.ro</div>
+          <div class="notif-desc">Raportul de penetration testing a fost generat. 0 vulnerabilități critice identificate.</div>
+          <div class="notif-timp">acum 6 ore</div>
+        </div>
+      </div>
+      <div class="notif-item">
+        <div class="notif-icon" style="background:rgba(8,145,178,.15);border:1px solid rgba(34,211,238,.25)">📄</div>
+        <div class="notif-continut">
+          <div class="notif-titlu">Factură #F-2024-089 emisă</div>
+          <div class="notif-desc">Factura lunară pentru FinTech Solutions SA a fost generată — €18.400.</div>
+          <div class="notif-timp">ieri, 09:15</div>
+        </div>
+      </div>
+    </div>
+    <div class="panou-footer">
+      <span class="panou-footer-info">Afișare <strong>6</strong> din <strong>12</strong> notificări</span>
+      <div class="panou-footer-btns">
+        <a href="#" class="pf-btn sec">Șterge toate</a>
+        <a href="#" class="pf-btn prim">Vezi toate →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     DROPDOWN MESAJE
+═══════════════════════════════════ -->
+<div class="overlay-dropdown" id="drop-mesaje">
+  <a href="#" class="overlay-bg"></a>
+  <div class="dropdown-card">
+    <div class="panou-header">
+      <div class="panou-header-accent"></div>
+      <div class="panou-header-stg">
+        <div class="panou-header-icon" style="background:rgba(5,150,105,.15);border:1px solid rgba(52,211,153,.3)">💬</div>
+        <div class="panou-header-info">
+          <div class="panou-titlu">Mesaje</div>
+          <div class="panou-sub">2 conversații active</div>
+        </div>
+      </div>
+      <a href="#" class="btn-close">✕</a>
+    </div>
+    <div class="panou-corp">
+      <div class="mesaj-item necitit">
+        <div class="mesaj-avatar" style="background:linear-gradient(135deg,#0891b2,#0e7490)">👤<span class="mesaj-online-dot"></span></div>
+        <div class="mesaj-continut">
+          <div class="mesaj-sus"><span class="mesaj-nume">Ioana D.</span><span class="mesaj-timp">14:28</span></div>
+          <div class="mesaj-rol">Head of Cloud Engineering</div>
+          <div class="mesaj-preview">Am finalizat migrarea storage-01. Verifică...</div>
+        </div>
+      </div>
+      <div class="mesaj-item necitit">
+        <div class="mesaj-avatar" style="background:linear-gradient(135deg,#7c3aed,#5b21b6)">👤<span class="mesaj-online-dot"></span></div>
+        <div class="mesaj-continut">
+          <div class="mesaj-sus"><span class="mesaj-nume">Andrei P.</span><span class="mesaj-timp">14:10</span></div>
+          <div class="mesaj-rol">Head of Security</div>
+          <div class="mesaj-preview">Raportul de pentest pentru MedTech e gata</div>
+        </div>
+      </div>
+      <div class="mesaj-item">
+        <div class="mesaj-avatar" style="background:linear-gradient(135deg,#1d4ed8,#4338ca)">👤</div>
+        <div class="mesaj-continut">
+          <div class="mesaj-sus"><span class="mesaj-nume">Maria C.</span><span class="mesaj-timp">11:42</span></div>
+          <div class="mesaj-rol">CTO</div>
+          <div class="mesaj-preview">Meeting de mâine la 10:00 se reprogramează</div>
+        </div>
+      </div>
+      <div class="mesaj-item">
+        <div class="mesaj-avatar" style="background:linear-gradient(135deg,#be185d,#9d174d)">👤</div>
+        <div class="mesaj-continut">
+          <div class="mesaj-sus"><span class="mesaj-nume">Radu T.</span><span class="mesaj-timp">09:15</span></div>
+          <div class="mesaj-rol">Head of AI Division</div>
+          <div class="mesaj-preview">Pipeline RAG pentru TechCorp e în setup...</div>
+        </div>
+      </div>
+      <div class="mesaj-item">
+        <div class="mesaj-avatar" style="background:linear-gradient(135deg,#b45309,#92400e)">👤</div>
+        <div class="mesaj-continut">
+          <div class="mesaj-sus"><span class="mesaj-nume">Elena V.</span><span class="mesaj-timp">Ieri</span></div>
+          <div class="mesaj-rol">COO</div>
+          <div class="mesaj-preview">Raportul lunar Q1 este pregătit pentru review</div>
+        </div>
+      </div>
+    </div>
+    <div class="mesaj-input-zona">
+      <input class="mesaj-input" type="text" placeholder="Scrie un mesaj nou..."/>
+      <button class="mesaj-send-btn">➤</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     DROPDOWN SETARI TOPBAR
+═══════════════════════════════════ -->
+<div class="overlay-dropdown" id="drop-setari">
+  <a href="#" class="overlay-bg"></a>
+  <div class="dropdown-card">
+    <div class="panou-header">
+      <div class="panou-header-accent"></div>
+      <div class="panou-header-stg">
+        <div class="panou-header-icon" style="background:rgba(71,85,105,.2);border:1px solid rgba(100,116,139,.3)">⚙️</div>
+        <div class="panou-header-info">
+          <div class="panou-titlu">Setări rapide</div>
+          <div class="panou-sub">Configurări cont și interfață</div>
+        </div>
+      </div>
+      <a href="#" class="btn-close">✕</a>
+    </div>
+    <div class="panou-corp">
+      <div class="profil-card-mini">
+        <div class="pc-avatar">👤</div>
+        <div class="pc-info">
+          <div class="pc-name">Alexandru M.</div>
+          <div class="pc-email">alex@axiomit.ro</div>
+          <div class="pc-rol">Administrator · Super User</div>
+        </div>
+        <span class="pc-badge">● Online</span>
+      </div>
+      <div class="setari-sectiune">
+        <div class="setari-sectiune-label">Cont</div>
+        <a href="#panou-profil" class="setari-item">
+          <div class="setari-item-icon" style="background:rgba(29,78,216,.15)">👤</div>
+          <div class="setari-item-info"><div class="si-titlu">Profilul meu</div><div class="si-sub">Editează informațiile personale</div></div>
+          <span class="setari-item-sageata">›</span>
+        </a>
+        <a href="#panou-configurare" class="setari-item">
+          <div class="setari-item-icon" style="background:rgba(124,58,237,.15)">🔑</div>
+          <div class="setari-item-info"><div class="si-titlu">Securitate &amp; Parole</div><div class="si-sub">2FA, sesiuni active</div></div>
+          <span class="setari-item-sageata">›</span>
+        </a>
+        <div class="setari-item">
+          <div class="setari-item-icon" style="background:rgba(8,145,178,.15)">🔔</div>
+          <div class="setari-item-info"><div class="si-titlu">Notificări</div><div class="si-sub">Email, push, Slack</div></div>
+          <span class="setari-item-sageata">›</span>
+        </div>
+      </div>
+      <div class="setari-sectiune">
+        <div class="setari-sectiune-label">Interfață</div>
+        <div class="setari-item">
+          <div class="setari-item-icon" style="background:rgba(180,83,9,.15)">🌙</div>
+          <div class="setari-item-info"><div class="si-titlu">Temă întunecată</div><div class="si-sub">Activă în prezent</div></div>
+          <div class="setari-toggle"><div class="toggle-pista on"></div></div>
+        </div>
+        <div class="setari-item">
+          <div class="setari-item-icon" style="background:rgba(5,150,105,.15)">🌐</div>
+          <div class="setari-item-info"><div class="si-titlu">Limbă</div><div class="si-sub">Română (RO)</div></div>
+          <span class="setari-item-sageata">›</span>
+        </div>
+        <div class="setari-item">
+          <div class="setari-item-icon" style="background:rgba(29,78,216,.15)">📊</div>
+          <div class="setari-item-info"><div class="si-titlu">Densitate date</div><div class="si-sub">Compactă</div></div>
+          <span class="setari-item-sageata">›</span>
+        </div>
+      </div>
+      <div class="setari-sectiune">
+        <div class="setari-sectiune-label">Sistem</div>
+        <div class="setari-item">
+          <div class="setari-item-icon" style="background:rgba(220,38,38,.12)">🚪</div>
+          <div class="setari-item-info"><div class="si-titlu" style="color:#f87171">Deconectare</div><div class="si-sub">Ieși din cont</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="panou-footer">
+      <span class="panou-footer-info">Dashboard v2.4.1</span>
+      <div class="panou-footer-btns">
+        <a href="#panou-ajutor" class="pf-btn sec">Ajutor</a>
+        <a href="#panou-configurare" class="pf-btn prim">Setări complete →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PANOU INFRASTRUCTURA
+═══════════════════════════════════ -->
+<div class="overlay-sidebar" id="panou-infrastructura">
+  <a href="#" class="overlay-bg"></a>
+  <div class="panou-stanga">
+    <div class="panou-header">
+      <div class="panou-header-accent"></div>
+      <div class="panou-header-stg">
+        <div class="panou-header-icon" style="background:rgba(8,145,178,.15);border:1px solid rgba(34,211,238,.3)">☁️</div>
+        <div class="panou-header-info">
+          <div class="panou-titlu">Infrastructură Cloud</div>
+          <div class="panou-sub">247 servere active · AWS, Azure, GCP</div>
+        </div>
+      </div>
+      <a href="#" class="btn-close">✕</a>
+    </div>
+    <div class="panou-corp">
+      <div class="panou-padding">
+        <div class="grila-stat-2">
+          <div class="stat-mini-card"><div class="smv" style="color:#3b82f6">247</div><div class="sml">Servere totale</div></div>
+          <div class="stat-mini-card"><div class="smv" style="color:#34d399">99.99%</div><div class="sml">Disponibilitate</div></div>
+          <div class="stat-mini-card"><div class="smv" style="color:#f87171">3</div><div class="sml">Incidente active</div></div>
+          <div class="stat-mini-card"><div class="smv" style="color:#fbbf24">4.2 TB</div><div class="sml">Trafic/zi</div></div>
+        </div>
+        <div class="panou-sectiune-label">Servere critice</div>
+        <div class="mini-card">
+          <div class="mini-card-header">
+            <div class="mini-card-titlu"><span style="color:#34d399">●</span> eu-prod-01</div>
+            <span class="mini-card-badge" style="background:rgba(5,150,105,.15);border:1px solid rgba(52,211,153,.3);color:#34d399">Online</span>
+          </div>
+          <div class="bara-mini"><div class="bara-mini-bg"><div class="bara-mini-val" style="width:63%;background:#34d399"></div></div><span class="bara-mini-pct" style="color:#34d399">63%</span></div>
+          <div class="mini-card-val">AWS eu-west-1 · Frankfurt, DE · 8ms latency</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-card-header">
+            <div class="mini-card-titlu"><span style="color:#fbbf24">●</span> eu-prod-04</div>
+            <span class="mini-card-badge" style="background:rgba(220,38,38,.15);border:1px solid rgba(248,113,113,.3);color:#f87171">⚠ Alertă</span>
+          </div>
+          <div class="bara-mini"><div class="bara-mini-bg"><div class="bara-mini-val" style="width:94%;background:#dc2626"></div></div><span class="bara-mini-pct" style="color:#f87171">94%</span></div>
+          <div class="mini-card-val">AWS eu-west-1 · Frankfurt, DE · 11ms latency</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-card-header">
+            <div class="mini-card-titlu"><span style="color:#34d399">●</span> us-east-01</div>
+            <span class="mini-card-badge" style="background:rgba(5,150,105,.15);border:1px solid rgba(52,211,153,.3);color:#34d399">Online</span>
+          </div>
+          <div class="bara-mini"><div class="bara-mini-bg"><div class="bara-mini-val" style="width:50%;background:#34d399"></div></div><span class="bara-mini-pct" style="color:#34d399">50%</span></div>
+          <div class="mini-card-val">AWS us-east-1 · Virginia, US · 42ms latency</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-card-header">
+            <div class="mini-card-titlu"><span style="color:#f87171">●</span> storage-01</div>
+            <span class="mini-card-badge" style="background:rgba(217,119,6,.15);border:1px solid rgba(251,191,36,.3);color:#fbbf24">Warning</span>
+          </div>
+          <div class="bara-mini"><div class="bara-mini-bg"><div class="bara-mini-val" style="width:85%;background:#dc2626"></div></div><span class="bara-mini-pct" style="color:#f87171">85%</span></div>
+          <div class="mini-card-val">Azure westeurope · Amsterdam, NL</div>
+        </div>
+        <div class="panou-sectiune-label" style="margin-top:8px">Costuri cloud luna curentă</div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">AWS (60%)</span><span class="vbr-val">$8,420</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:60%;background:#f59e0b"></div></div></div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">Azure (25%)</span><span class="vbr-val">$3,508</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:25%;background:#3b82f6"></div></div></div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">GCP (15%)</span><span class="vbr-val">$2,105</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:15%;background:#34d399"></div></div></div>
+      </div>
+    </div>
+    <div class="panou-footer">
+      <span class="panou-footer-info">Total: <strong>$14,033</strong> / lună</span>
+      <div class="panou-footer-btns">
+        <a href="#" class="pf-btn sec">Export CSV</a>
+        <a href="#" class="pf-btn prim">Toate serverele →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PANOU SECURITATE
+═══════════════════════════════════ -->
+<div class="overlay-sidebar" id="panou-securitate">
+  <a href="#" class="overlay-bg"></a>
+  <div class="panou-stanga">
+    <div class="panou-header">
+      <div class="panou-header-accent" style="background:linear-gradient(135deg,#7c3aed,#5b21b6)"></div>
+      <div class="panou-header-stg">
+        <div class="panou-header-icon" style="background:rgba(124,58,237,.15);border:1px solid rgba(167,139,250,.3)">🛡️</div>
+        <div class="panou-header-info">
+          <div class="panou-titlu">Securitate</div>
+          <div class="panou-sub">Scor global: 91/100 · SOC activ 24/7</div>
+        </div>
+      </div>
+      <a href="#" class="btn-close">✕</a>
+    </div>
+    <div class="panou-corp">
+      <div class="panou-padding">
+        <div class="grila-stat-2">
+          <div class="stat-mini-card"><div class="smv" style="color:#a78bfa">91</div><div class="sml">Scor securitate</div></div>
+          <div class="stat-mini-card"><div class="smv" style="color:#34d399">0</div><div class="sml">Incidente P1</div></div>
+          <div class="stat-mini-card"><div class="smv" style="color:#f87171">3</div><div class="sml">Alerte active</div></div>
+          <div class="stat-mini-card"><div class="smv" style="color:#60a5fa">98%</div><div class="sml">Patch coverage</div></div>
+        </div>
+        <div class="panou-sectiune-label">Scoruri pe categorie</div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">Firewall &amp; Network</span><span class="vbr-val" style="color:#34d399">94%</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:94%;background:#34d399"></div></div></div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">Patch Management</span><span class="vbr-val" style="color:#a78bfa">86%</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:86%;background:#a78bfa"></div></div></div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">Access Control IAM</span><span class="vbr-val" style="color:#a78bfa">93%</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:93%;background:#a78bfa"></div></div></div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">Encryption AES-256</span><span class="vbr-val" style="color:#34d399">98%</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:98%;background:#34d399"></div></div></div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">Incident Response</span><span class="vbr-val" style="color:#fbbf24">81%</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:81%;background:#fbbf24"></div></div></div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">Compliance GDPR</span><span class="vbr-val" style="color:#a78bfa">89%</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:89%;background:#a78bfa"></div></div></div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">Pentest Score</span><span class="vbr-val" style="color:#34d399">95%</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:95%;background:#34d399"></div></div></div>
+        <div class="panou-sectiune-label" style="margin-top:8px">Evenimente recente SOC</div>
+        <div class="mini-card"><div class="mini-card-header"><div class="mini-card-titlu">🔴 CPU overload eu-prod-04</div><span class="mini-card-badge" style="background:rgba(220,38,38,.15);color:#f87171">P1</span></div><div class="mini-card-val">acum 4 min · Auto-scaling activat</div></div>
+        <div class="mini-card"><div class="mini-card-header"><div class="mini-card-titlu">🟡 Disk usage 85% storage-01</div><span class="mini-card-badge" style="background:rgba(217,119,6,.15);color:#fbbf24">P2</span></div><div class="mini-card-val">acum 22 min · În investigare</div></div>
+        <div class="mini-card"><div class="mini-card-header"><div class="mini-card-titlu">✅ Pentest completat axiomit.ro</div><span class="mini-card-badge" style="background:rgba(5,150,105,.15);color:#34d399">OK</span></div><div class="mini-card-val">acum 6 ore · 0 vulnerabilități critice</div></div>
+      </div>
+    </div>
+    <div class="panou-footer">
+      <span class="panou-footer-info">Ultimul pentest: <strong>23 Mar 2026</strong></span>
+      <div class="panou-footer-btns">
+        <a href="#" class="pf-btn sec">Raport PDF</a>
+        <a href="#" class="pf-btn prim">Centru SOC →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PANOU DEVOPS
+═══════════════════════════════════ -->
+<div class="overlay-sidebar" id="panou-devops">
+  <a href="#" class="overlay-bg"></a>
+  <div class="panou-stanga">
+    <div class="panou-header">
+      <div class="panou-header-accent" style="background:linear-gradient(135deg,#059669,#047857)"></div>
+      <div class="panou-header-stg">
+        <div class="panou-header-icon" style="background:rgba(5,150,105,.15);border:1px solid rgba(52,211,153,.3)">⚡</div>
+        <div class="panou-header-info">
+          <div class="panou-titlu">DevOps &amp; CI/CD</div>
+          <div class="panou-sub">12 pipeline-uri active · ultimul deploy acum 14 min</div>
+        </div>
+      </div>
+      <a href="#" class="btn-close">✕</a>
+    </div>
+    <div class="panou-corp">
+      <div class="panou-padding">
+        <div class="grila-stat-2">
+          <div class="stat-mini-card"><div class="smv" style="color:#34d399">98.2%</div><div class="sml">Success rate</div></div>
+          <div class="stat-mini-card"><div class="smv" style="color:#60a5fa">12</div><div class="sml">Deployuri/zi</div></div>
+          <div class="stat-mini-card"><div class="smv" style="color:#fbbf24">6.2 min</div><div class="sml">Timp mediu build</div></div>
+          <div class="stat-mini-card"><div class="smv" style="color:#a78bfa">0</div><div class="sml">Rollbacks azi</div></div>
+        </div>
+        <div class="panou-sectiune-label">Pipeline-uri recente</div>
+        <div class="mini-card"><div class="mini-card-header"><div class="mini-card-titlu">✅ axiomit-api v3.2.1</div><span class="mini-card-badge" style="background:rgba(5,150,105,.15);color:#34d399">Succes</span></div><div class="mini-card-val">eu-prod-01, eu-prod-02 · GitHub Actions · 5m 48s</div></div>
+        <div class="mini-card"><div class="mini-card-header"><div class="mini-card-titlu">⚠ techcorp-frontend v1.4</div><span class="mini-card-badge" style="background:rgba(217,119,6,.15);color:#fbbf24">Lent</span></div><div class="mini-card-val">staging · 18 min (normal: 6 min)</div></div>
+        <div class="mini-card"><div class="mini-card-header"><div class="mini-card-titlu">✅ medtech-api v2.1.3</div><span class="mini-card-badge" style="background:rgba(5,150,105,.15);color:#34d399">Succes</span></div><div class="mini-card-val">eu-prod-03 · GitLab CI · 4m 12s</div></div>
+        <div class="mini-card"><div class="mini-card-header"><div class="mini-card-titlu">✅ fintech-dashboard v5.0</div><span class="mini-card-badge" style="background:rgba(5,150,105,.15);color:#34d399">Succes</span></div><div class="mini-card-val">prod · ArgoCD · 7m 31s</div></div>
+        <div class="panou-sectiune-label" style="margin-top:8px">Kubernetes clusters</div>
+        <div class="mini-card"><div class="mini-card-header"><div class="mini-card-titlu">🟢 k8s-eu-prod</div><span class="mini-card-badge" style="background:rgba(5,150,105,.15);color:#34d399">Healthy</span></div><div class="mini-card-val">47 pods · 8 nodes · CPU 62% · RAM 71%</div></div>
+        <div class="mini-card"><div class="mini-card-header"><div class="mini-card-titlu">🟢 k8s-us-prod</div><span class="mini-card-badge" style="background:rgba(5,150,105,.15);color:#34d399">Healthy</span></div><div class="mini-card-val">23 pods · 4 nodes · CPU 48% · RAM 55%</div></div>
+      </div>
+    </div>
+    <div class="panou-footer">
+      <span class="panou-footer-info">Deployuri azi: <strong>12</strong> / 0 rollbacks</span>
+      <div class="panou-footer-btns">
+        <a href="#" class="pf-btn sec">Argocd →</a>
+        <a href="#" class="pf-btn prim">Deploy nou →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PANOU ANALYTICS
+═══════════════════════════════════ -->
+<div class="overlay-sidebar" id="panou-analytics">
+  <a href="#" class="overlay-bg"></a>
+  <div class="panou-stanga">
+    <div class="panou-header">
+      <div class="panou-header-accent" style="background:linear-gradient(135deg,#b45309,#92400e)"></div>
+      <div class="panou-header-stg">
+        <div class="panou-header-icon" style="background:rgba(180,83,9,.15);border:1px solid rgba(251,191,36,.3)">📈</div>
+        <div class="panou-header-info">
+          <div class="panou-titlu">Analytics</div>
+          <div class="panou-sub">Performanță platformă · luna curentă</div>
+        </div>
+      </div>
+      <a href="#" class="btn-close">✕</a>
+    </div>
+    <div class="panou-corp">
+      <div class="panou-padding">
+        <div class="analytics-row">
+          <div class="analytics-mini"><div class="am-val" style="color:#3b82f6">4.2 TB</div><div class="am-lbl">Trafic total</div><div class="am-tend" style="color:#34d399">▲ +18%</div><svg viewBox="0 0 100 28" preserveAspectRatio="none"><polyline points="0,22 14,18 28,20 42,14 56,16 70,10 84,7 100,5" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <div class="analytics-mini"><div class="am-val" style="color:#34d399">99.99%</div><div class="am-lbl">Disponibilitate</div><div class="am-tend" style="color:#34d399">▲ +0.01%</div><svg viewBox="0 0 100 28" preserveAspectRatio="none"><polyline points="0,12 14,11 28,13 42,10 56,9 70,8 84,8 100,7" fill="none" stroke="#34d399" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        </div>
+        <div class="analytics-row">
+          <div class="analytics-mini"><div class="am-val" style="color:#a78bfa">247</div><div class="am-lbl">Servere active</div><div class="am-tend" style="color:#34d399">▲ +12</div><svg viewBox="0 0 100 28" preserveAspectRatio="none"><polyline points="0,24 14,22 28,20 42,19 56,17 70,15 84,13 100,12" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <div class="analytics-mini"><div class="am-val" style="color:#fbbf24">12ms</div><div class="am-lbl">Latență medie</div><div class="am-tend" style="color:#f87171">▼ +2ms</div><svg viewBox="0 0 100 28" preserveAspectRatio="none"><polyline points="0,14 14,12 28,16 42,11 56,13 70,10 84,14 100,11" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        </div>
+        <div class="panou-sectiune-label">Top endpoint-uri ca trafic</div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">api.axiomit.ro/v3</span><span class="vbr-val">1.8 TB</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:85%;background:#3b82f6"></div></div></div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">cdn.axiomit.ro</span><span class="vbr-val">1.2 TB</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:57%;background:#3b82f6"></div></div></div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">app.fintech-client.ro</span><span class="vbr-val">0.7 TB</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:33%;background:#a78bfa"></div></div></div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">api.medtech.ro</span><span class="vbr-val">0.5 TB</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:24%;background:#a78bfa"></div></div></div>
+      </div>
+    </div>
+    <div class="panou-footer">
+      <span class="panou-footer-info">Perioadă: <strong>1–23 Mar 2026</strong></span>
+      <div class="panou-footer-btns">
+        <a href="#" class="pf-btn sec">Export</a>
+        <a href="#" class="pf-btn prim">Raport detaliat →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PANOU AI PIPELINES
+═══════════════════════════════════ -->
+<div class="overlay-sidebar" id="panou-ai">
+  <a href="#" class="overlay-bg"></a>
+  <div class="panou-stanga">
+    <div class="panou-header">
+      <div class="panou-header-accent" style="background:linear-gradient(135deg,#1d4ed8,#7c3aed)"></div>
+      <div class="panou-header-stg">
+        <div class="panou-header-icon" style="background:rgba(29,78,216,.15);border:1px solid rgba(59,130,246,.3)">🤖</div>
+        <div class="panou-header-info">
+          <div class="panou-titlu">AI Pipelines</div>
+          <div class="panou-sub">5 pipeline-uri active · 1 în configurare</div>
+        </div>
+      </div>
+      <a href="#" class="btn-close">✕</a>
+    </div>
+    <div class="panou-corp">
+      <div class="panou-padding">
+        <div class="grila-stat-2">
+          <div class="stat-mini-card"><div class="smv" style="color:#60a5fa">23.3K</div><div class="sml">Req/zi total</div></div>
+          <div class="stat-mini-card"><div class="smv" style="color:#34d399">97.8%</div><div class="sml">Acuratețe medie</div></div>
+          <div class="stat-mini-card"><div class="smv" style="color:#fbbf24">€840</div><div class="sml">Cost luna</div></div>
+          <div class="stat-mini-card"><div class="smv" style="color:#a78bfa">280ms</div><div class="sml">Latență medie</div></div>
+        </div>
+        <div class="panou-sectiune-label">Pipeline-uri active</div>
+        <div class="mini-card"><div class="mini-card-header"><div class="mini-card-titlu">LLM Document Classifier</div><span class="mini-card-badge" style="background:rgba(5,150,105,.15);color:#34d399">● Activ</span></div><div class="mini-card-val">GPT-4o · FinTech SA · 14,892 req/zi · €342/lună</div></div>
+        <div class="mini-card"><div class="mini-card-header"><div class="mini-card-titlu">Computer Vision QA</div><span class="mini-card-badge" style="background:rgba(5,150,105,.15);color:#34d399">● Activ</span></div><div class="mini-card-val">YOLOv8 · MedTech · 2,340 img/zi · €218/lună</div></div>
+        <div class="mini-card"><div class="mini-card-header"><div class="mini-card-titlu">RPA Facturare</div><span class="mini-card-badge" style="background:rgba(217,119,6,.15);color:#fbbf24">⚠ Warning</span></div><div class="mini-card-val">UiPath · Retail · 890 fact/zi · 2 erori (0.2%)</div></div>
+        <div class="mini-card"><div class="mini-card-header"><div class="mini-card-titlu">NLP Sentiment Analysis</div><span class="mini-card-badge" style="background:rgba(5,150,105,.15);color:#34d399">● Activ</span></div><div class="mini-card-val">Claude 3.5 · Industria · 5,200 texte/zi · €124/lună</div></div>
+        <div class="mini-card"><div class="mini-card-header"><div class="mini-card-titlu">RAG Knowledge Base</div><span class="mini-card-badge" style="background:rgba(29,78,216,.15);color:#60a5fa">🔄 Setup</span></div><div class="mini-card-val">LangChain + Pinecone · TechCorp · Go-live 27 Mar</div></div>
+      </div>
+    </div>
+    <div class="panou-footer">
+      <span class="panou-footer-info">Cost total luna: <strong>€840</strong></span>
+      <div class="panou-footer-btns">
+        <a href="#" class="pf-btn sec">Logs</a>
+        <a href="#" class="pf-btn prim">Pipeline nou →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PANOU ALERTE
+═══════════════════════════════════ -->
+<div class="overlay-sidebar" id="panou-alerte">
+  <a href="#" class="overlay-bg"></a>
+  <div class="panou-stanga">
+    <div class="panou-header">
+      <div class="panou-header-accent" style="background:linear-gradient(135deg,#dc2626,#b91c1c)"></div>
+      <div class="panou-header-stg">
+        <div class="panou-header-icon" style="background:rgba(220,38,38,.15);border:1px solid rgba(248,113,113,.3)">🔔</div>
+        <div class="panou-header-info">
+          <div class="panou-titlu">Alerte</div>
+          <div class="panou-sub">3 active · 2 rezolvate azi</div>
+        </div>
+      </div>
+      <a href="#" class="btn-close">✕</a>
+    </div>
+    <div class="panou-corp">
+      <div class="panou-padding">
+        <div class="panou-sectiune-label">🔴 Active — necesită atenție</div>
+        <div class="mini-card" style="border-color:rgba(220,38,38,.3)"><div class="mini-card-header"><div class="mini-card-titlu">CPU critic eu-prod-04 — 94%</div><span class="mini-card-badge" style="background:rgba(220,38,38,.15);color:#f87171">P1 · Critic</span></div><div class="mini-card-val">acum 4 minute · Auto-scaling declanșat · Andrei P.</div></div>
+        <div class="mini-card" style="border-color:rgba(217,119,6,.3)"><div class="mini-card-header"><div class="mini-card-titlu">Disk usage 85% — storage-01</div><span class="mini-card-badge" style="background:rgba(217,119,6,.15);color:#fbbf24">P2 · Ridicat</span></div><div class="mini-card-val">acum 22 minute · Investigare în curs · Ioana D.</div></div>
+        <div class="mini-card" style="border-color:rgba(8,145,178,.3)"><div class="mini-card-header"><div class="mini-card-titlu">SSL expiră în 14 zile api.axiomit.ro</div><span class="mini-card-badge" style="background:rgba(8,145,178,.15);color:#22d3ee">P3 · Mediu</span></div><div class="mini-card-val">acum 2 ore · Reînnoire programată · Alexandru M.</div></div>
+        <div class="panou-sectiune-label" style="margin-top:8px">✅ Rezolvate azi</div>
+        <div class="mini-card"><div class="mini-card-header"><div class="mini-card-titlu" style="color:#64748b">Pipeline lent axiomit-api</div><span class="mini-card-badge" style="background:rgba(5,150,105,.15);color:#34d399">Rezolvat</span></div><div class="mini-card-val">Rezolvat la 12:30 · durată: 45 min</div></div>
+        <div class="mini-card"><div class="mini-card-header"><div class="mini-card-titlu" style="color:#64748b">Memory leak staging-02</div><span class="mini-card-badge" style="background:rgba(5,150,105,.15);color:#34d399">Rezolvat</span></div><div class="mini-card-val">Rezolvat la 09:15 · durată: 1h 20min</div></div>
+      </div>
+    </div>
+    <div class="panou-footer">
+      <span class="panou-footer-info"><strong>3</strong> active · <strong>2</strong> rezolvate azi</span>
+      <div class="panou-footer-btns">
+        <a href="#" class="pf-btn sec">Istoric</a>
+        <a href="#" class="pf-btn prim">Configurare alerte →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PANOU CLIENTI
+═══════════════════════════════════ -->
+<div class="overlay-sidebar" id="panou-clienti">
+  <a href="#" class="overlay-bg"></a>
+  <div class="panou-stanga">
+    <div class="panou-header">
+      <div class="panou-header-accent" style="background:linear-gradient(135deg,#7c3aed,#4f46e5)"></div>
+      <div class="panou-header-stg">
+        <div class="panou-header-icon" style="background:rgba(124,58,237,.15);border:1px solid rgba(167,139,250,.3)">👥</div>
+        <div class="panou-header-info">
+          <div class="panou-titlu">Clienți</div>
+          <div class="panou-sub">142 activi · 1 onboarding</div>
+        </div>
+      </div>
+      <a href="#" class="btn-close">✕</a>
+    </div>
+    <div class="panou-corp">
+      <div class="panou-padding">
+        <div class="grila-stat-2">
+          <div class="stat-mini-card"><div class="smv" style="color:#a78bfa">142</div><div class="sml">Clienți activi</div></div>
+          <div class="stat-mini-card"><div class="smv" style="color:#34d399">+8</div><div class="sml">Noi luna aceasta</div></div>
+          <div class="stat-mini-card"><div class="smv" style="color:#60a5fa">€149K</div><div class="sml">MRR total</div></div>
+          <div class="stat-mini-card"><div class="smv" style="color:#fbbf24">98.1%</div><div class="sml">Retenție</div></div>
+        </div>
+        <div class="panou-sectiune-label">Top clienți după valoare</div>
+        <div class="client-row"><div class="client-row-avatar" style="background:linear-gradient(135deg,#1d4ed8,#4338ca)">🏦</div><div class="client-row-info"><div class="cr-name">FinTech Solutions SA</div><div class="cr-det">Enterprise · 3 ani · Cloud + Sec + AI</div></div><div class="client-row-dreapta"><div class="cr-sum">€18.400</div><div class="cr-plan">/ lună</div></div></div>
+        <div class="client-row"><div class="client-row-avatar" style="background:linear-gradient(135deg,#7c3aed,#5b21b6)">🏪</div><div class="client-row-info"><div class="cr-name">Retail Group RO</div><div class="cr-det">Enterprise · 2 ani · Cloud + DevOps</div></div><div class="client-row-dreapta"><div class="cr-sum">€12.800</div><div class="cr-plan">/ lună</div></div></div>
+        <div class="client-row"><div class="client-row-avatar" style="background:linear-gradient(135deg,#0891b2,#0e7490)">🏥</div><div class="client-row-info"><div class="cr-name">MedTech Systems</div><div class="cr-det">Business · 1 an · AI + Sec + Data</div></div><div class="client-row-dreapta"><div class="cr-sum">€8.950</div><div class="cr-plan">/ lună</div></div></div>
+        <div class="client-row"><div class="client-row-avatar" style="background:linear-gradient(135deg,#059669,#047857)">🏭</div><div class="client-row-info"><div class="cr-name">Industria Corp SA</div><div class="cr-det">Business · 8 luni · DevOps + Cloud</div></div><div class="client-row-dreapta"><div class="cr-sum">€6.200</div><div class="cr-plan">/ lună</div></div></div>
+        <div class="client-row"><div class="client-row-avatar" style="background:linear-gradient(135deg,#b45309,#92400e)">🚀</div><div class="client-row-info"><div class="cr-name">TechCorp SRL</div><div class="cr-det">Business · Nou · Cloud + Managed</div></div><div class="client-row-dreapta"><div class="cr-sum">€4.500</div><div class="cr-plan">/ lună</div></div></div>
+      </div>
+    </div>
+    <div class="panou-footer">
+      <span class="panou-footer-info">MRR total: <strong>€149.720</strong></span>
+      <div class="panou-footer-btns">
+        <a href="#" class="pf-btn sec">Export CRM</a>
+        <a href="#" class="pf-btn prim">Client nou →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PANOU FACTURI
+═══════════════════════════════════ -->
+<div class="overlay-sidebar" id="panou-facturi">
+  <a href="#" class="overlay-bg"></a>
+  <div class="panou-stanga">
+    <div class="panou-header">
+      <div class="panou-header-accent" style="background:linear-gradient(135deg,#b45309,#92400e)"></div>
+      <div class="panou-header-stg">
+        <div class="panou-header-icon" style="background:rgba(180,83,9,.15);border:1px solid rgba(251,191,36,.3)">📄</div>
+        <div class="panou-header-info">
+          <div class="panou-titlu">Facturi</div>
+          <div class="panou-sub">3 în așteptare · 1 restantă</div>
+        </div>
+      </div>
+      <a href="#" class="btn-close">✕</a>
+    </div>
+    <div class="panou-corp">
+      <div class="panou-padding">
+        <div class="grila-stat-2">
+          <div class="stat-mini-card"><div class="smv" style="color:#34d399">€149K</div><div class="sml">Încasat luna aceasta</div></div>
+          <div class="stat-mini-card"><div class="smv" style="color:#fbbf24">€24K</div><div class="sml">În așteptare</div></div>
+          <div class="stat-mini-card"><div class="smv" style="color:#f87171">€4.5K</div><div class="sml">Restantă</div></div>
+          <div class="stat-mini-card"><div class="smv" style="color:#60a5fa">38</div><div class="sml">Facturi emise</div></div>
+        </div>
+        <div class="panou-sectiune-label">Facturi recente</div>
+        <div class="factura-item"><div class="factura-icon" style="background:rgba(5,150,105,.15)">📄</div><div class="factura-info"><div class="fi-nr">F-2024-089</div><div class="fi-client">FinTech Solutions SA</div><div class="fi-data">Emisă: 01 Mar 2026</div></div><div class="factura-dreapta"><div class="fd-suma" style="color:#34d399">€18.400</div><span class="fd-stare fd-achitata">Achitată</span></div></div>
+        <div class="factura-item"><div class="factura-icon" style="background:rgba(29,78,216,.15)">📄</div><div class="factura-info"><div class="fi-nr">F-2024-088</div><div class="fi-client">Retail Group RO</div><div class="fi-data">Emisă: 01 Mar 2026</div></div><div class="factura-dreapta"><div class="fd-suma" style="color:#34d399">€12.800</div><span class="fd-stare fd-achitata">Achitată</span></div></div>
+        <div class="factura-item"><div class="factura-icon" style="background:rgba(217,119,6,.15)">📄</div><div class="factura-info"><div class="fi-nr">F-2024-087</div><div class="fi-client">MedTech Systems</div><div class="fi-data">Emisă: 01 Mar 2026</div></div><div class="factura-dreapta"><div class="fd-suma" style="color:#fbbf24">€8.950</div><span class="fd-stare fd-in-asteptare">Așteptare</span></div></div>
+        <div class="factura-item"><div class="factura-icon" style="background:rgba(217,119,6,.15)">📄</div><div class="factura-info"><div class="fi-nr">F-2024-086</div><div class="fi-client">Industria Corp SA</div><div class="fi-data">Emisă: 01 Mar 2026</div></div><div class="factura-dreapta"><div class="fd-suma" style="color:#fbbf24">€6.200</div><span class="fd-stare fd-in-asteptare">Așteptare</span></div></div>
+        <div class="factura-item"><div class="factura-icon" style="background:rgba(220,38,38,.15)">📄</div><div class="factura-info"><div class="fi-nr">F-2024-082</div><div class="fi-client">StartupXYZ SRL</div><div class="fi-data">Emisă: 01 Feb 2026 · Scadentă: 15 Feb</div></div><div class="factura-dreapta"><div class="fd-suma" style="color:#f87171">€4.500</div><span class="fd-stare fd-restanta">Restantă</span></div></div>
+      </div>
+    </div>
+    <div class="panou-footer">
+      <span class="panou-footer-info">Restanțe: <strong style="color:#f87171">€4.500</strong></span>
+      <div class="panou-footer-btns">
+        <a href="#" class="pf-btn sec">Export PDF</a>
+        <a href="#" class="pf-btn prim">Factură nouă →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PANOU PROGRAMARI
+═══════════════════════════════════ -->
+<div class="overlay-sidebar" id="panou-programari">
+  <a href="#" class="overlay-bg"></a>
+  <div class="panou-stanga">
+    <div class="panou-header">
+      <div class="panou-header-accent" style="background:linear-gradient(135deg,#0891b2,#0e7490)"></div>
+      <div class="panou-header-stg">
+        <div class="panou-header-icon" style="background:rgba(8,145,178,.15);border:1px solid rgba(34,211,238,.3)">🗓️</div>
+        <div class="panou-header-info">
+          <div class="panou-titlu">Programări</div>
+          <div class="panou-sub">4 evenimente următoarele 2 săptămâni</div>
+        </div>
+      </div>
+      <a href="#" class="btn-close">✕</a>
+    </div>
+    <div class="panou-corp">
+      <div class="panou-padding">
+        <div class="panou-sectiune-label">Următoarele evenimente</div>
+        <div class="programare-item"><div class="prog-data" style="background:linear-gradient(135deg,#1d4ed8,#4f46e5)"><span class="pd-zi">24</span><span class="pd-luna">MAR</span></div><div class="prog-info"><div class="pi-titlu">Mentenanță EU cluster</div><div class="pi-det">02:00–04:00 UTC · Zero downtime estimat</div><div class="pi-resp">Ioana D. + echipa DevOps</div></div></div>
+        <div class="programare-item"><div class="prog-data" style="background:linear-gradient(135deg,#7c3aed,#5b21b6)"><span class="pd-zi">26</span><span class="pd-luna">MAR</span></div><div class="prog-info"><div class="pi-titlu">Consultanță strategică — FinTech SA</div><div class="pi-det">10:00–11:30 · Google Meet</div><div class="pi-resp">Alexandru M. + Maria C.</div></div></div>
+        <div class="programare-item"><div class="prog-data" style="background:linear-gradient(135deg,#059669,#047857)"><span class="pd-zi">01</span><span class="pd-luna">APR</span></div><div class="prog-info"><div class="pi-titlu">Pentest trimestrial — MedTech</div><div class="pi-det">09:00–18:00 · Onsite Chișinău</div><div class="pi-resp">Andrei P. + echipa Security</div></div></div>
+        <div class="programare-item"><div class="prog-data" style="background:linear-gradient(135deg,#0891b2,#0e7490)"><span class="pd-zi">03</span><span class="pd-luna">APR</span></div><div class="prog-info"><div class="pi-titlu">Review lunar infrastructură</div><div class="pi-det">14:00–15:00 · Intern</div><div class="pi-resp">Echipa tehnică</div></div></div>
+        <div class="programare-item"><div class="prog-data" style="background:linear-gradient(135deg,#b45309,#92400e)"><span class="pd-zi">07</span><span class="pd-luna">APR</span></div><div class="prog-info"><div class="pi-titlu">Onboarding TechCorp SRL</div><div class="pi-det">10:00–12:00 · Video call</div><div class="pi-resp">Elena V. + Maria C.</div></div></div>
+      </div>
+    </div>
+    <div class="panou-footer">
+      <span class="panou-footer-info"><strong>5</strong> evenimente programate</span>
+      <div class="panou-footer-btns">
+        <a href="#" class="pf-btn sec">Export ICS</a>
+        <a href="#" class="pf-btn prim">Programare nouă →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PANOU VENITURI
+═══════════════════════════════════ -->
+<div class="overlay-sidebar" id="panou-venituri">
+  <a href="#" class="overlay-bg"></a>
+  <div class="panou-stanga">
+    <div class="panou-header">
+      <div class="panou-header-accent" style="background:linear-gradient(135deg,#059669,#34d399)"></div>
+      <div class="panou-header-stg">
+        <div class="panou-header-icon" style="background:rgba(5,150,105,.15);border:1px solid rgba(52,211,153,.3)">💰</div>
+        <div class="panou-header-info">
+          <div class="panou-titlu">Venituri</div>
+          <div class="panou-sub">€149.720 luna curentă · +23% YoY</div>
+        </div>
+      </div>
+      <a href="#" class="btn-close">✕</a>
+    </div>
+    <div class="panou-corp">
+      <div class="panou-padding">
+        <div class="venituri-rezumat-row">
+          <div class="vr-card"><div class="vrc-val" style="color:#34d399">€1.79M</div><div class="vrc-lbl">Total 12 luni</div></div>
+          <div class="vr-card"><div class="vrc-val" style="color:#60a5fa">€149K</div><div class="vrc-lbl">Luna curentă</div></div>
+          <div class="vr-card"><div class="vrc-val" style="color:#fbbf24">+23%</div><div class="vrc-lbl">Creștere YoY</div></div>
+        </div>
+        <div class="panou-sectiune-label">Venituri pe servicii</div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">Cloud Engineering</span><span class="vbr-val" style="color:#3b82f6">€47.900</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:100%;background:#3b82f6"></div></div></div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">Cybersecurity</span><span class="vbr-val" style="color:#a78bfa">€32.980</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:69%;background:#a78bfa"></div></div></div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">Automatizare AI</span><span class="vbr-val" style="color:#34d399">€26.970</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:56%;background:#34d399"></div></div></div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">DevOps &amp; CI/CD</span><span class="vbr-val" style="color:#fbbf24">€22.460</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:47%;background:#fbbf24"></div></div></div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">Data Platforms</span><span class="vbr-val" style="color:#f472b6">€11.980</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:25%;background:#f472b6"></div></div></div>
+        <div class="venituri-bara-row"><div class="vbr-sus"><span class="vbr-lbl">Managed Services</span><span class="vbr-val" style="color:#22d3ee">€7.430</span></div><div class="vbr-bg"><div class="vbr-fill" style="width:15%;background:#22d3ee"></div></div></div>
+      </div>
+    </div>
+    <div class="panou-footer">
+      <span class="panou-footer-info">MRR: <strong style="color:#34d399">€149.720</strong></span>
+      <div class="panou-footer-btns">
+        <a href="#" class="pf-btn sec">Export Excel</a>
+        <a href="#" class="pf-btn prim">Raport financiar →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PANOU CONFIGURARE
+═══════════════════════════════════ -->
+<div class="overlay-sidebar" id="panou-configurare">
+  <a href="#" class="overlay-bg"></a>
+  <div class="panou-stanga">
+    <div class="panou-header">
+      <div class="panou-header-accent"></div>
+      <div class="panou-header-stg">
+        <div class="panou-header-icon" style="background:rgba(71,85,105,.2);border:1px solid rgba(100,116,139,.3)">⚙️</div>
+        <div class="panou-header-info">
+          <div class="panou-titlu">Configurare sistem</div>
+          <div class="panou-sub">Setări globale platformă Axiom IT</div>
+        </div>
+      </div>
+      <a href="#" class="btn-close">✕</a>
+    </div>
+    <div class="panou-corp">
+      <div class="panou-padding">
+        <div class="panou-sectiune-label">Interfață &amp; Afișare</div>
+        <div class="setari-item"><div class="setari-item-icon" style="background:rgba(180,83,9,.15)">🌙</div><div class="setari-item-info"><div class="si-titlu">Temă întunecată</div><div class="si-sub">Dark mode activat</div></div><div class="setari-toggle"><div class="toggle-pista on"></div></div></div>
+        <div class="setari-item"><div class="setari-item-icon" style="background:rgba(29,78,216,.15)">🌐</div><div class="setari-item-info"><div class="si-titlu">Limbă</div><div class="si-sub">Română (RO)</div></div><span class="setari-item-sageata">›</span></div>
+        <div class="setari-item"><div class="setari-item-icon" style="background:rgba(5,150,105,.15)">🔔</div><div class="setari-item-info"><div class="si-titlu">Notificări push</div><div class="si-sub">Activate pentru P1 și P2</div></div><div class="setari-toggle"><div class="toggle-pista on"></div></div></div>
+        <div class="setari-item"><div class="setari-item-icon" style="background:rgba(124,58,237,.15)">📧</div><div class="setari-item-info"><div class="si-titlu">Notificări email</div><div class="si-sub">alex@axiomit.ro</div></div><div class="setari-toggle"><div class="toggle-pista on"></div></div></div>
+        <div class="panou-sectiune-label" style="margin-top:6px">Securitate cont</div>
+        <div class="setari-item"><div class="setari-item-icon" style="background:rgba(5,150,105,.15)">🔒</div><div class="setari-item-info"><div class="si-titlu">Autentificare 2FA</div><div class="si-sub">Activată · Authenticator app</div></div><div class="setari-toggle"><div class="toggle-pista on"></div></div></div>
+        <div class="setari-item"><div class="setari-item-icon" style="background:rgba(29,78,216,.15)">💻</div><div class="setari-item-info"><div class="si-titlu">Sesiuni active</div><div class="si-sub">2 sesiuni deschise</div></div><span class="setari-item-sageata">›</span></div>
+        <div class="setari-item"><div class="setari-item-icon" style="background:rgba(220,38,38,.12)">🔑</div><div class="setari-item-info"><div class="si-titlu">Schimbare parolă</div><div class="si-sub">Ultima schimbare: 30 zile</div></div><span class="setari-item-sageata">›</span></div>
+        <div class="panou-sectiune-label" style="margin-top:6px">API &amp; Integrări</div>
+        <div class="setari-item"><div class="setari-item-icon" style="background:rgba(8,145,178,.15)">🔗</div><div class="setari-item-info"><div class="si-titlu">API Keys</div><div class="si-sub">3 chei active</div></div><span class="setari-item-sageata">›</span></div>
+        <div class="setari-item"><div class="setari-item-icon" style="background:rgba(124,58,237,.15)">⚡</div><div class="setari-item-info"><div class="si-titlu">Webhook-uri</div><div class="si-sub">Slack, PagerDuty, Jira</div></div><span class="setari-item-sageata">›</span></div>
+      </div>
+    </div>
+    <div class="panou-footer">
+      <span class="panou-footer-info">Dashboard v2.4.1</span>
+      <div class="panou-footer-btns">
+        <a href="#" class="pf-btn sec">Resetare</a>
+        <a href="#" class="pf-btn prim">Salvează →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PANOU PROFIL
+═══════════════════════════════════ -->
+<div class="overlay-sidebar" id="panou-profil">
+  <a href="#" class="overlay-bg"></a>
+  <div class="panou-stanga">
+    <div class="panou-header">
+      <div class="panou-header-accent" style="background:linear-gradient(135deg,#1d4ed8,#4f46e5)"></div>
+      <div class="panou-header-stg">
+        <div class="panou-header-icon" style="background:rgba(29,78,216,.15);border:1px solid rgba(59,130,246,.3)">👤</div>
+        <div class="panou-header-info">
+          <div class="panou-titlu">Profilul meu</div>
+          <div class="panou-sub">Administrator · Super User</div>
+        </div>
+      </div>
+      <a href="#" class="btn-close">✕</a>
+    </div>
+    <div class="panou-corp">
+      <div class="profil-hero">
+        <div class="profil-avatar-mare">👤</div>
+        <div class="ph-name">Alexandru M.</div>
+        <div class="ph-email">alex@axiomit.ro · +373 721 000 000</div>
+        <span class="ph-badge">Administrator · Super User</span>
+      </div>
+      <div class="profil-stats-row">
+        <div class="ps-item"><div class="psv" style="color:#3b82f6">9</div><div class="psl">Ani vechime</div></div>
+        <div class="ps-item"><div class="psv" style="color:#34d399">142</div><div class="psl">Clienți gestionați</div></div>
+        <div class="ps-item"><div class="psv" style="color:#a78bfa">5</div><div class="psl">Proiecte active</div></div>
+      </div>
+      <div class="panou-padding">
+        <div class="panou-sectiune-label">Informații personale</div>
+        <div class="setari-item"><div class="setari-item-icon" style="background:rgba(29,78,216,.15)">📧</div><div class="setari-item-info"><div class="si-titlu">Email</div><div class="si-sub">alex@axiomit.ro</div></div><span class="setari-item-sageata">›</span></div>
+        <div class="setari-item"><div class="setari-item-icon" style="background:rgba(5,150,105,.15)">📞</div><div class="setari-item-info"><div class="si-titlu">Telefon</div><div class="si-sub">+373 721 000 000</div></div><span class="setari-item-sageata">›</span></div>
+        <div class="setari-item"><div class="setari-item-icon" style="background:rgba(124,58,237,.15)">🏢</div><div class="setari-item-info"><div class="si-titlu">Rol</div><div class="si-sub">CEO &amp; Co-Founder · Administrator</div></div><span class="setari-item-sageata">›</span></div>
+        <div class="panou-sectiune-label" style="margin-top:6px">Activitate recentă</div>
+        <div class="mini-card"><div class="mini-card-titlu" style="margin-bottom:3px">Ultimul login</div><div class="mini-card-val">Azi 14:28 · Chrome · Chișinău, MD</div></div>
+        <div class="mini-card"><div class="mini-card-titlu" style="margin-bottom:3px">Ultima acțiune</div><div class="mini-card-val">Deploy axiomit-api v3.2.1 · acum 14 min</div></div>
+      </div>
+    </div>
+    <div class="panou-footer">
+      <span class="panou-footer-info">Cont creat: <strong>Mar 2015</strong></span>
+      <div class="panou-footer-btns">
+        <a href="#" class="pf-btn sec">Deconectare</a>
+        <a href="#" class="pf-btn prim">Editează profil →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     PANOU AJUTOR
+═══════════════════════════════════ -->
+<div class="overlay-sidebar" id="panou-ajutor">
+  <a href="#" class="overlay-bg"></a>
+  <div class="panou-stanga">
+    <div class="panou-header">
+      <div class="panou-header-accent" style="background:linear-gradient(135deg,#f59e0b,#d97706)"></div>
+      <div class="panou-header-stg">
+        <div class="panou-header-icon" style="background:rgba(245,158,11,.15);border:1px solid rgba(251,191,36,.3)">❓</div>
+        <div class="panou-header-info">
+          <div class="panou-titlu">Ajutor &amp; Suport</div>
+          <div class="panou-sub">Documentație, ghiduri și contact</div>
+        </div>
+      </div>
+      <a href="#" class="btn-close">✕</a>
+    </div>
+    <div class="panou-corp">
+      <div class="panou-padding">
+        <div class="panou-sectiune-label">Documentație</div>
+        <div class="ajutor-item"><div class="ajutor-icon" style="background:rgba(29,78,216,.15)">📖</div><div class="ajutor-info"><div class="ai-titlu">Ghid de utilizare dashboard</div><div class="ai-desc">Cum să folosești toate funcționalitățile platformei Axiom IT</div></div><span style="color:var(--darker);font-size:12px">›</span></div>
+        <div class="ajutor-item"><div class="ajutor-icon" style="background:rgba(8,145,178,.15)">🔌</div><div class="ajutor-info"><div class="ai-titlu">Documentație API v3.2</div><div class="ai-desc">Referință completă pentru integrarea cu API-ul Axiom IT</div></div><span style="color:var(--darker);font-size:12px">›</span></div>
+        <div class="ajutor-item"><div class="ajutor-icon" style="background:rgba(5,150,105,.15)">🎓</div><div class="ajutor-info"><div class="ai-titlu">Tutoriale video</div><div class="ai-desc">Cursuri pas cu pas pentru serviciile cloud și AI</div></div><span style="color:var(--darker);font-size:12px">›</span></div>
+        <div class="panou-sectiune-label" style="margin-top:6px">Suport tehnic</div>
+        <div class="ajutor-item"><div class="ajutor-icon" style="background:rgba(124,58,237,.15)">💬</div><div class="ajutor-info"><div class="ai-titlu">Chat live cu echipa</div><div class="ai-desc">Disponibil Lun–Vin 09:00–18:00 · Timp răspuns: ~5 min</div></div><span style="color:var(--darker);font-size:12px">›</span></div>
+        <div class="ajutor-item"><div class="ajutor-icon" style="background:rgba(220,38,38,.12)">🚨</div><div class="ajutor-info"><div class="ai-titlu">Suport urgent P1/P2</div><div class="ai-desc">Linie dedicată 24/7 pentru incidente critice · +373 721 999</div></div><span style="color:var(--darker);font-size:12px">›</span></div>
+        <div class="ajutor-item"><div class="ajutor-icon" style="background:rgba(180,83,9,.15)">📧</div><div class="ajutor-info"><div class="ai-titlu">Email suport</div><div class="ai-desc">support@axiomit.ro · Răspuns în 4 ore pe plan Business</div></div><span style="color:var(--darker);font-size:12px">›</span></div>
+        <div class="panou-sectiune-label" style="margin-top:6px">Status platformă</div>
+        <div class="mini-card"><div class="mini-card-header"><div class="mini-card-titlu"><span style="color:#34d399">●</span> Toate sistemele funcționale</div><span class="mini-card-badge" style="background:rgba(5,150,105,.15);color:#34d399">Operational</span></div><div class="mini-card-val">Ultima verificare: acum 30 secunde · status.axiomit.ro</div></div>
+      </div>
+    </div>
+    <div class="panou-footer">
+      <span class="panou-footer-info">v2.4.1 · <a href="#" style="color:var(--blue-pal)">Note versiune</a></span>
+      <div class="panou-footer-btns">
+        <a href="#" class="pf-btn sec">Status page</a>
+        <a href="#" class="pf-btn prim">Contactează suport →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

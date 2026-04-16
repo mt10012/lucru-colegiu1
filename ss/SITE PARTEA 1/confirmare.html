@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmare — Axiom IT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=EB+Garamond:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --albastru:       #2563eb;
+      --albastru-hover: #1e3a8a;
+      --verde:          #10b981;
+      --fundal:         #eef2ff;
+      --text:           #0f172a;
+      --text-pal:       #64748b;
+      --alb:            #ffffff;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: linear-gradient(145deg, #e0e7ff 0%, #f0fdf4 50%, #dbeafe 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    /* Grid subtil în background */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(99,102,241,.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(99,102,241,.06) 1px, transparent 1px);
+      background-size: 48px 48px;
+      pointer-events: none;
+    }
+
+    /* Glow difuz sus */
+    body::after {
+      content: '';
+      position: fixed;
+      top: -150px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 400px;
+      background: radial-gradient(ellipse, rgba(99,102,241,.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .card {
+      background: var(--alb);
+      border: 1px solid rgba(99,102,241,.15);
+      border-radius: 20px;
+      padding: 3rem 2.5rem;
+      max-width: 460px;
+      width: 100%;
+      text-align: center;
+      box-shadow:
+        0 4px 40px rgba(99,102,241,.1),
+        0 1px 3px rgba(0,0,0,.04);
+      opacity: 0;
+      animation: fadeUp .5s .1s ease forwards;
+    }
+
+    /* Cercul cu bifa */
+    .bifa-wrap {
+      width: 72px;
+      height: 72px;
+      background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.75rem;
+      position: relative;
+    }
+
+    .bifa-wrap::after {
+      content: '';
+      position: absolute;
+      inset: -6px;
+      border-radius: 50%;
+      border: 2px solid rgba(16,185,129,.2);
+      animation: pulsatie 2s ease infinite;
+    }
+
+    .bifa-wrap svg {
+      width: 34px;
+      height: 34px;
+      stroke: var(--verde);
+      stroke-width: 2.5;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 50;
+      stroke-dashoffset: 50;
+      animation: deseneazaBifa .6s .4s ease forwards;
+    }
+
+    /* Titlu și subtitlu */
+    .titlu {
+      font-family: 'EB Garamond', serif;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: .5rem;
+    }
+
+    .subtitlu {
+      font-size: .95rem;
+      color: var(--text-pal);
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    /* Rândurile cu info */
+    .info-rand {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .65rem 1rem;
+      background: var(--fundal);
+      border-radius: 10px;
+      margin-bottom: .5rem;
+      font-size: .875rem;
+    }
+
+    .info-rand .eticheta {
+      color: var(--text-pal);
+    }
+
+    .info-rand .valoare {
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .info-rand .valoare.verde {
+      color: var(--verde);
+    }
+
+    /* Buton */
+    .buton {
+      display: block;
+      width: 100%;
+      margin-top: 1.75rem;
+      padding: .9rem 1.5rem;
+      background: var(--albastru);
+      color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .95rem;
+      font-weight: 600;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: background .2s, transform .15s, box-shadow .2s;
+      box-shadow: 0 4px 14px rgba(37,99,235,.3);
+    }
+
+    .buton:hover {
+      background: var(--albastru-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(37,99,235,.35);
+    }
+
+    .buton:active {
+      transform: translateY(0);
+    }
+
+    /* Nota de jos */
+    .nota {
+      font-size: .78rem;
+      color: var(--text-pal);
+      margin-top: 1.25rem;
+      line-height: 1.6;
+    }
+
+    /* Animații */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes deseneazaBifa {
+      to { stroke-dashoffset: 0; }
+    }
+
+    @keyframes pulsatie {
+      0%, 100% { opacity: .6; transform: scale(1); }
+      50%       { opacity: 1; transform: scale(1.06); }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <div class="bifa-wrap">
+      <svg viewBox="0 0 24 24">
+        <polyline points="4 12 9 17 20 7"/>
+      </svg>
+    </div>
+
+    <h1 class="titlu">Plată confirmată!</h1>
+    <p class="subtitlu">
+      Comanda ta a fost procesată cu succes.<br>
+      Vei primi un email de confirmare în câteva minute.
+    </p>
+
+    <div class="info-rand">
+      <span class="eticheta">Plan activ</span>
+      <span class="valoare">Business</span>
+    </div>
+    <div class="info-rand">
+      <span class="eticheta">Sumă achitată</span>
+      <span class="valoare">€1.783,81 / lună</span>
+    </div>
+    <div class="info-rand">
+      <span class="eticheta">Status</span>
+      <span class="valoare verde">✓ Activ</span>
+    </div>
+
+    <a href="/SITE PARTEA 1/index.html" class="buton">Mergi la pagina principală →</a>
+
+    <p class="nota">
+      Ai întrebări? Scrie-ne la <strong>contact@axiomit.ro</strong><br>
+      sau sună la <strong>+373 721 000 000</strong>
+    </p>
+
+  </div>
+
+</body>
+</html>

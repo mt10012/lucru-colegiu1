@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plată — Axiom IT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=EB+Garamond:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/axiom-it.css">
+</head>
+<body>
+
+  <nav class="bara-navigare">
+    <div class="container">
+      <a href="/img/logo-axiom.png" class="logo-nav">
+        <img src="/img/logo-axiom.png" alt="Logo Axiom IT">
+
+      </a>
+      <ul class="linkuri-nav">
+        <li><a href="/SITE PARTEA 1/index.html">Acasă</a></li>
+        <li><a href="/SITE PARTEA 1/services.html">Servicii</a></li>
+        <li><a href="/SITE PARTEA 1/about.html">Despre noi</a></li>
+        <li><a href="/SITE PARTEA 1/portofolio.html">Portofoliu</a></li>
+        <li><a href="/SITE PARTEA 1/blog.html">Blog</a></li>
+      </ul>
+      <a href="#" class="buton buton-principal buton-contact-nav">Contact</a>
+    </div>
+  </nav>
+
+  <main class="pagina-plata">
+    <div class="container">
+
+      <div class="antet-plata">
+        <div class="eticheta-sectiune eticheta-albastra">Finalizează comanda</div>
+        <h1>Alege planul tău și <span class="accent">începe astăzi</span></h1>
+        <p>Infrastructură cloud enterprise &middot; Securitate &middot; DevOps &middot; Platforme de date</p>
+        <div class="stepper">
+          <div class="pas-stepper">
+            <div class="cerc-pas activ">1</div>
+            <span class="eticheta-pas activa">Plan</span>
+          </div>
+          <div class="linie-stepper"></div>
+          <div class="pas-stepper">
+            <div class="cerc-pas">2</div>
+            <span class="eticheta-pas">Detalii</span>
+          </div>
+          <div class="linie-stepper"></div>
+          <div class="pas-stepper">
+            <div class="cerc-pas">3</div>
+            <span class="eticheta-pas">Plată</span>
+          </div>
+          <div class="linie-stepper"></div>
+          <div class="pas-stepper">
+            <div class="cerc-pas">4</div>
+            <span class="eticheta-pas">Confirmare</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grila-planuri">
+
+        <div class="card-plan-wrap">
+          <input type="radio" name="plan" id="plan-starter">
+          <label class="card-plan-label" for="plan-starter">
+            <div class="radio-visual"></div>
+            <div class="nivel-plan">Starter</div>
+            <div class="pret-plan">
+              <span class="moneda-plan">€</span>
+              <span class="suma-plan">499</span>
+              <span class="perioada-plan">/lună</span>
+            </div>
+            <p class="descriere-plan">Ideal pentru companii mici și startup-uri</p>
+            <div class="separator-plan"></div>
+            <ul class="lista-plan">
+              <li><span class="bifa-plan">✓</span>Audit infrastructură cloud</li>
+              <li><span class="bifa-plan">✓</span>Email setup &amp; configurare DNS</li>
+              <li><span class="bifa-plan">✓</span>Security scan lunar</li>
+              <li><span class="bifa-plan">✓</span>Suport email &middot; răspuns 24h</li>
+              <li><span class="bifa-plan">✓</span>Monitorizare bază continuă</li>
+            </ul>
+            <span class="eticheta-buton-plan">Selectează Starter</span>
+          </label>
+        </div>
+
+        <div class="card-plan-wrap recomandat">
+          <input type="radio" name="plan" id="plan-business" checked>
+          <label class="card-plan-label" for="plan-business">
+            <span class="insigna-popular">⭐ Cel mai popular</span>
+            <div class="radio-visual"></div>
+            <div class="nivel-plan">Business</div>
+            <div class="pret-plan">
+              <span class="moneda-plan">€</span>
+              <span class="suma-plan">1.499</span>
+              <span class="perioada-plan">/lună</span>
+            </div>
+            <p class="descriere-plan">Complet pentru companii în creștere</p>
+            <div class="separator-plan"></div>
+            <ul class="lista-plan">
+              <li><span class="bifa-plan">✓</span>Automatizare AI Q-flows™</li>
+              <li><span class="bifa-plan">✓</span>DevOps platform complet</li>
+              <li><span class="bifa-plan">✓</span>Monitorizare 24/7 Prometheus + Grafana</li>
+              <li><span class="bifa-plan">✓</span>Security suite + raport lunar</li>
+              <li><span class="bifa-plan">✓</span>Support/chat &middot; răspuns 4h</li>
+              <li><span class="bifa-plan">✓</span>30 ore consultanță / lună</li>
+            </ul>
+            <span class="eticheta-buton-plan">✓ Selectat &mdash; Business</span>
+          </label>
+        </div>
+
+        <div class="card-plan-wrap enterprise">
+          <input type="radio" name="plan" id="plan-enterprise">
+          <label class="card-plan-label" for="plan-enterprise">
+            <div class="radio-visual"></div>
+            <div class="nivel-plan">Enterprise</div>
+            <div class="pret-plan">
+              <span class="suma-plan">Custom</span>
+            </div>
+            <p class="descriere-plan">Soluții personalizate pentru organizația ta</p>
+            <div class="separator-plan"></div>
+            <ul class="lista-plan">
+              <li><span class="bifa-plan">✓</span>Tot ce include Business</li>
+              <li><span class="bifa-plan">✓</span>SOC 24/7 dedicat</li>
+              <li><span class="bifa-plan">✓</span>SLA garantat 99.99% uptime</li>
+              <li><span class="bifa-plan">✓</span>Manageri dedicați PM + Eng + QoD</li>
+              <li><span class="bifa-plan">✓</span>Consultanță strategie hardware</li>
+              <li><span class="bifa-plan">✓</span>Zero-trust security architecture</li>
+            </ul>
+            <span class="eticheta-buton-plan">Contactează vânzările &rarr;</span>
+          </label>
+        </div>
+
+      </div>
+
+      <form action="#" method="post">
+        <div class="grila-formular">
+
+          <div class="coloana-stanga">
+
+            <div class="sectiune-form">
+              <div class="titlu-form">Detalii facturare</div>
+              <div class="subtitlu-form">Completează datele companiei tale</div>
+              <div class="grup-camp">
+                <label class="eticheta-camp" for="companie">Companie *</label>
+                <input class="input-camp" type="text" id="companie" name="companie" placeholder="Denumirea companiei tale" required>
+              </div>
+              <div class="grila-2">
+                <div class="grup-camp">
+                  <label class="eticheta-camp" for="cui">CUI *</label>
+                  <input class="input-camp" type="text" id="cui" name="cui" placeholder="RO12345678" required>
+                </div>
+                <div class="grup-camp">
+                  <label class="eticheta-camp" for="reg">Nr. Reg. Com. *</label>
+                  <input class="input-camp" type="text" id="reg" name="reg" placeholder="J40/1234/2020" required>
+                </div>
+              </div>
+              <div class="grila-2">
+                <div class="grup-camp">
+                  <label class="eticheta-camp" for="email">Email *</label>
+                  <input class="input-camp" type="email" id="email" name="email" placeholder="contact@companie.ro" required>
+                </div>
+                <div class="grup-camp">
+                  <label class="eticheta-camp" for="telefon">Telefon *</label>
+                  <input class="input-camp" type="tel" id="telefon" name="telefon" placeholder="+373 721 000 000" required>
+                </div>
+              </div>
+              <div class="grup-camp">
+                <label class="eticheta-camp" for="adresa">Adresă facturare *</label>
+                <input class="input-camp" type="text" id="adresa" name="adresa" placeholder="Str. Română 12/23, Chișinău" required>
+              </div>
+            </div>
+
+            <div class="sectiune-form">
+              <div class="titlu-form">Metodă de plată</div>
+              <div class="subtitlu-form">Plată securizată prin Stripe &middot; PCI DSS Compliant</div>
+
+              <div class="taburi-plata">
+                <input class="tab-plata" type="radio" name="metoda" id="tab-card" checked>
+                <label for="tab-card">💳 Card bancar</label>
+                <input class="tab-plata" type="radio" name="metoda" id="tab-transfer">
+                <label for="tab-transfer">🏦 Transfer</label>
+                <input class="tab-plata" type="radio" name="metoda" id="tab-factura">
+                <label for="tab-factura">📄 Factură</label>
+
+                <div class="continut-tab continut-card">
+                  <div class="grup-camp">
+                    <label class="eticheta-camp" for="nr-card">Număr card *</label>
+                    <input class="input-camp" type="text" id="nr-card" name="nr-card" placeholder="4242 4242 4242 4242" maxlength="19">
+                    <div class="rand-logocard">
+                      <span class="logo-card">VISA</span>
+                      <span class="logo-card" style="color:var(--chihlimbar-deschis);border-color:rgba(251,191,36,.3)">MC</span>
+                      <span class="logo-card" style="color:var(--cyan-deschis);border-color:rgba(34,211,238,.3)">AMEX</span>
+                    </div>
+                  </div>
+                  <div class="grila-2">
+                    <div class="grup-camp">
+                      <label class="eticheta-camp" for="expirare">Expirare *</label>
+                      <input class="input-camp" type="text" id="expirare" name="expirare" placeholder="MM / AA" maxlength="7">
+                    </div>
+                    <div class="grup-camp">
+                      <label class="eticheta-camp" for="cvv">CVV *</label>
+                      <input class="input-camp" type="password" id="cvv" name="cvv" placeholder="•••" maxlength="4">
+                    </div>
+                  </div>
+                  <div class="grup-camp">
+                    <label class="eticheta-camp" for="titular">Titular card *</label>
+                    <input class="input-camp" type="text" id="titular" name="titular" placeholder="Nume Prenume">
+                  </div>
+                  <div class="siguranta-plata">
+                    <span>🔐</span>
+                    <span>Plată securizată <strong>SSL 256-bit</strong> &middot; Datele cardului nu sunt stocate pe serverele noastre.</span>
+                  </div>
+                </div>
+
+                <div class="continut-tab continut-transfer">
+                  <div class="info-transfer">
+                    <p>Efectuați transferul în contul de mai jos. Activăm planul în 24h de la confirmare.</p>
+                    <p><strong>Beneficiar:</strong> Axiom IT SRL</p>
+                    <p><strong>IBAN:</strong> MD24 AG00 0000 0002 2500 1000</p>
+                    <p><strong>Bancă:</strong> Moldova Agroindbank</p>
+                    <p><strong>Referință:</strong> AXIOM-BUSINESS-2026</p>
+                  </div>
+                </div>
+
+                <div class="continut-tab continut-factura">
+                  <div class="info-factura">
+                    <p>Generăm o factură proforma pe care o achitați în termen de 5 zile lucrătoare.</p>
+                    <p><strong>Factura</strong> va fi trimisă pe adresa de email completată mai sus.</p>
+                    <p><strong>Termen de plată:</strong> 5 zile lucrătoare de la emitere.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="coloana-dreapta">
+
+            <div class="card-sumar">
+              <div class="titlu-sumar">Sumar comandă</div>
+              <div class="rand-sumar">
+                <span class="label-s">Plan Business</span>
+                <span class="val-s">€1.499 / lună</span>
+              </div>
+              <div class="rand-sumar">
+                <span class="label-s">Perioadă</span>
+                <span class="val-s">Lunar &middot; 12 luni</span>
+              </div>
+              <div class="rand-sumar">
+                <span class="label-s">Economie anuală</span>
+                <span class="val-s verde">&minus;€1.799 (10%)</span>
+              </div>
+              <div class="rand-sumar">
+                <span class="label-s">TVA (19%)</span>
+                <span class="val-s">€284,81</span>
+              </div>
+              <div class="rand-total">
+                <span class="label-total">Total / lună</span>
+                <span class="val-total">€1.783,81</span>
+              </div>
+            </div>
+
+            <div class="garantii">
+              <div class="linie-garantie"><span>🔒</span>Plată securizată SSL 256-bit</div>
+              <div class="linie-garantie"><span>🔁</span>Anulezi oricând fără penalizări</div>
+              <div class="linie-garantie"><span>📞</span>Support dedicat 24/7</div>
+              <div class="linie-garantie"><span>⭐</span>140+ clienți mulțumiți</div>
+              <div class="linie-garantie"><span>🛡️</span>Garanție satisfacție 30 zile</div>
+            </div>
+
+            <a href="confirmare.html" class="buton-plata-final">
+              <span>🔐</span>
+              <span>Plătește acum &middot; €1.783,81</span>
+            </button>
+
+            <p class="nota-termeni">
+              Prin continuare ești de acord cu <a href="/alte fisiere/termeni-conditii.pdf" target="_blank">Termenii și condițiile</a> și <a href="/alte fisiere/politica-confidentialitate.pdf" target="_blank">Politica de confidențialitate</a>
+            </p>
+
+          </div>
+
+        </div>
+      </form>
+
+    </div>
+  </main>
+
+  <footer class="subsol">
+    <div class="container">
+      <div class="subsol-principal">
+
+        <div class="subsol-brand">
+          <a href="/img/logo-axiom.png" class="logo-subsol">
+          </a>
+          <p class="descriere-brand">Partenerul tău de încredere pentru transformarea digitală.</p>
+          <p class="tagline-brand">AI &middot; Cloud &middot; DevOps &middot; Security &middot; Data Platforms</p>
+          <div class="retele-sociale">
+            <a href="#" class="buton-social">in</a>
+            <a href="#" class="buton-social">tw</a>
+            <a href="#" class="buton-social">fb</a>
+            <a href="#" class="buton-social">yt</a>
+          </div>
+        </div>
+
+        <div class="coloana-subsol">
+          <h4>Servicii</h4>
+          <ul>
+            <li><a href="#">Automatizare AI</a></li>
+            <li><a href="#">Cloud Engineering</a></li>
+            <li><a href="#">Cybersecurity</a></li>
+            <li><a href="#">DevOps &amp; CI/CD</a></li>
+            <li><a href="#">Data Platforms</a></li>
+            <li><a href="#">Managed Services</a></li>
+          </ul>
+        </div>
+
+        <div class="coloana-subsol">
+          <h4>Companie</h4>
+          <ul>
+            <li><a href="#">Despre noi</a></li>
+            <li><a href="#">Echipa</a></li>
+            <li><a href="#">Blog &amp; Noutăți</a></li>
+            <li><a href="#">Parteneri</a></li>
+            <li><a href="#">Cariere</a></li>
+            <li><a href="#">Studii de caz</a></li>
+          </ul>
+        </div>
+
+        <div class="coloana-subsol">
+          <h4>Soluții</h4>
+          <ul>
+            <li><a href="#">Startup-uri</a></li>
+            <li><a href="#">IMM-uri</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Sector public</a></li>
+            <li><a href="#">FinTech</a></li>
+            <li><a href="#">Healthcare IT</a></li>
+          </ul>
+        </div>
+
+        <div class="coloana-contact">
+          <h4>Contact</h4>
+          <div class="linie-contact"><span class="icon-contact">📍</span>Str. Română 12/23 Chișinău</div>
+          <div class="linie-contact"><span class="icon-contact">📞</span>+373 721 000 000</div>
+          <div class="linie-contact"><span class="icon-contact">✉</span>contact@axiomit.ro</div>
+          <div class="linie-contact"><span class="icon-contact">🕐</span>Lun–Vin: 09:00 – 18:00</div>
+          <div class="newsletter-subsol">
+            <input type="email" placeholder="Email newsletter...">
+            <button type="button">Sub</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bara-subsol-jos">
+        <p>© 2026 Axiom IT SRL. Toate drepturile rezervate.</p>
+        <div class="linkuri-subsol-jos">
+          <a href="/alte fisiere/politica-confidentialitate.pdf" target="_blank">Politică de confidențialitate</a>
+          <a href="/alte fisiere/termeni-conditii.pdf" target="_blank">Termeni și condiții</a>
+          <a href="/alte fisiere/cookie-policy.pdf" target="_blank">Cookie policy</a>
+        </div>
+        <span class="text-dreapta-subsol">Made in MD with love ❤</span>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
